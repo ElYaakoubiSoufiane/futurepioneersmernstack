@@ -74,7 +74,7 @@ const Login = () => {
       <div className="   h-[300px] sm:h-[400px] w-[90%] md:w-[90%]  lg:w-[60%]  flex element-shadow shadow-[0_14px_14px_rgba(0, 0, 0, 0.25),0_10px_10px_rgba(0,0,0,0.22)] rounded-[10px]">
         <div className=" flex-[2] flex flex-col items-center justify-center bg-[white] rounded-tl-[10px] rounded-bl-[10px]">
           <form className="flex flex-col items-center" onSubmit={HandleSubmit}>
-            <h1 className="text-[12px] my-auto sm:text-[20px] p-10 font-black md:text-[40px] mt-0">
+            <h1 className="text-[17px] my-auto sm:text-[20px] p-7 font-black md:text-[40px] mt-0">
               Login to Your Account
             </h1>
             <input
@@ -111,7 +111,7 @@ const Login = () => {
           </form>
         </div>
         <div className="flex-1 flex flex-col items-center justify-center bg-black rounded-tr-[10px] rounded-br-[10px]">
-          <h1 className="text-[white]  font-bold text-[12px] md:text-[40px] self-center mb-[90px] md:mb-[100px]">
+          <h1 className="text-[white]  font-bold text-[17px] md:text-[40px] self-center mb-[90px] md:mb-[100px]">
             New Here ?
           </h1>
           <Link to="/signup">
