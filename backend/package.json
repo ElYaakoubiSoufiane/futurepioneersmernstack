@@ -33,10 +33,7 @@
     "react-scripts": "^5.0.1"
   },
   "private": true,
-  "engines": {
-    "node": "18.x",
-    "npm": "10.1.0"
-  },
+  
   "eslintConfig": {
     "extends": [
       "react-app",
