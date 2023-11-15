@@ -16,7 +16,7 @@ const container = {
   },
 };
 const item = {
-  hidden: { x: 30, opacity: 0 },
+  hidden: { x:10, opacity: 0 },
   visible: {
     x: 0,
     opacity: 1,
@@ -71,7 +71,7 @@ const Signup = () => {
       transition={{ staggerChildren: 0.5 }}
       className="w-full pb-[100px] pt-[200px] bg-white element-cente flex items-center justify-center"
     >
-      <div className="   h-[300px] element-shadow rounded-[10px]  sm:h-[400px] w-[90%] md:w-[90%]  lg:w-[60%]  flex ">
+      <div className="   h-[350px] element-shadow rounded-[10px]  sm:h-[400px] w-[90%] md:w-[90%]  lg:w-[60%]  flex ">
         <div className="flex-1 rounded-tl-[10px] rounded-bl-[10px] flex text-center flex-col items-center justify-center bg-black  ">
           <h1 className="text-[white] text-center mx-[5px] font-bold text-[17px] md:text-[40px] self-center mb-[70px] md:mb-[100px]">
             Welcome Back
