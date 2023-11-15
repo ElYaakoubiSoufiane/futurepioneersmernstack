@@ -19,7 +19,7 @@ export default function Header() {
   const [windowWidth, setWindowWidth] = useState(getWindowWidth());
   const [menuiconcol, setMenuiconcol] = useState("");
   if (isTrue) {
-    setMenuiconcol("hover:bg-black hover:text-white");
+    setMenuiconcol("focus:bg-black focus:text-white");
   }
 
   useEffect(() => {
@@ -30,10 +30,13 @@ export default function Header() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+  const [menuCol, setmenuCol] = useState("");
 
   const [MobileMenu, setMobileMenu] = useState(isTrue);
   const dispatch = useDispatch();
-
+  if (isTrue) {
+    setmenuCol("focus:bg-black focus:text-white");
+  }
   const isLogged = useSelector((state: any) => state.auth.isLogged);
   return (
     <>
@@ -113,14 +116,14 @@ export default function Header() {
               </div>
             </div>
 
-            <div className="absolute top-[8px] left-0   pr-[10px] flex  sm:hidden">
+            <div className="absolute top-[8px] left-0   px-[10px] flex  sm:hidden">
               {/* <!-- Mobile menu button--> */}
               <button
                 onClick={() => {
                   setMobileMenu((isTrue: any) => !isTrue);
                 }}
                 type="button"
-                className={`relative  rounded-md  text-black font-extrabold ${menuiconcol} focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white`}
+                className={`relative  rounded-md texte-[15px] text-black font-extrabold ${menuiconcol} focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white`}
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
