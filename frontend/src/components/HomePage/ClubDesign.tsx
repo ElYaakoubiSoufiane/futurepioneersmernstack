@@ -32,7 +32,7 @@ export default function ClubDesign() {
             variants={imageAnimate}
             className="  hover:-translate-y-1 hover:scale-110 duration-300 element-center"
           >
-            <img src={imag1} alt="" className="object-cover h-[200px]  " />
+            <img src={imag1} alt="" className="object-cover h-[150px]  " />
           </motion.div>
 
           <div className="">
