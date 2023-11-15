@@ -5,7 +5,6 @@ const cors = require("cors");
 const userRoutes = require("./routes/users");
 const authRoutes = require("./routes/auth");
 
-const mongoose=require("mongoose")
 
 
 const mongoose = require("mongoose");
