@@ -123,7 +123,7 @@ export default function Header() {
                   setMobileMenu((isTrue: any) => !isTrue);
                 }}
                 type="button"
-                className={`relative  rounded-md texte-[15px] text-black font-extrabold ${menuiconcol} focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white`}
+                className={`relative  rounded-md texte-[15px] text-black font-extrabold ${menuiconcol} focus:outline-none `}
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
