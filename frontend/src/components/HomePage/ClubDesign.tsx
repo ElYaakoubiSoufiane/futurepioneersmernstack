@@ -1,4 +1,3 @@
-
 import imag1 from "../../assets/63110131796835.Y3JvcCw4NTAsNjY0LDAsMA.png";
 import { motion } from "framer-motion";
 const textAnimate = {
@@ -40,7 +39,7 @@ export default function ClubDesign() {
             {" "}
             <motion.div
               variants={textAnimate}
-              className="element-center px-[20%] text-center  text-black  items-center gap-[05px]  pt-[30px] flex flex-wrap"
+              className="element-center px-[10%] md:px-[20%] text-center  text-black  items-center gap-[05px]  pt-[30px] flex flex-wrap"
             >
               <h1 className="font-bold text-2xl md:text-4xl py-[10px]">
                 {" "}
@@ -50,8 +49,8 @@ export default function ClubDesign() {
                 Future Pioneers is a club that aims to create a good atmosphere
                 among students and with the community through the free
                 initiative of each member to carry out charitable work. Future
-                Pioneers is not an ordinary club, not like other clubs, it is
-                special
+                Pioneers is not an ordinary club,it's not like other clubs, it
+                is special
               </h2>
             </motion.div>
           </div>
