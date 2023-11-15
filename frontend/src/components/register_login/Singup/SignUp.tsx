@@ -48,7 +48,7 @@ const Signup = () => {
 
 
     try {
-      const url = "http://localhost:5000/api/users";
+      const url = "https://futurepioneersmernstack-c4ax.vercel.app/api/users";
       const { data: res } = await axios.post(url, data);
 
       console.log(res.message);
