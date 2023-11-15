@@ -108,7 +108,7 @@ export default function TeamSection() {
                   <div className="element-center pb-[5px]">
                     <img
                       src={imag1}
-                      alt=""
+                      alt="image"
                       className="w-[60px] h-[60px]   rounded-[50%] object-contain"
                     />
                   </div>
@@ -136,7 +136,7 @@ export default function TeamSection() {
                   <div className="element-center pb-[5px]">
                     <img
                       src={imag1}
-                      alt=""
+                      alt="img"
                       className="w-[60px] h-[60px]   rounded-[50%] object-contain"
                     />
                   </div>
@@ -163,7 +163,7 @@ export default function TeamSection() {
                   <div className="element-center pb-[5px]">
                     <img
                       src={imag1}
-                      alt=""
+                      alt="img"
                       className="w-[60px] h-[60px]   rounded-[50%] object-contain"
                     />
                   </div>
