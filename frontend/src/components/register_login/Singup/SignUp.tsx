@@ -16,7 +16,7 @@ const container = {
   },
 };
 const item = {
-  hidden: { x: 50, opacity: 0 },
+  hidden: { x: 30, opacity: 0 },
   visible: {
     x: 0,
     opacity: 1,
@@ -24,7 +24,7 @@ const item = {
       delayChildren: 0.3,
       staggerChildren: 0.2,
       bounce: 0.4,
-      duration: 1,
+      duration: 0.5,
     },
   },
 };
@@ -69,7 +69,7 @@ const Signup = () => {
       whileInView={"visible"}
       viewport={{ once: false, amount: 0.5 }}
       transition={{ staggerChildren: 0.5 }}
-      className="w-full py-[100px] bg-white element-cente flex items-center justify-center"
+      className="w-full pb-[100px] pt-[200px] bg-white element-cente flex items-center justify-center"
     >
       <div className="   h-[300px] element-shadow rounded-[10px]  sm:h-[400px] w-[90%] md:w-[90%]  lg:w-[60%]  flex ">
         <div className="flex-1 rounded-tl-[10px] rounded-bl-[10px] flex text-center flex-col items-center justify-center bg-black  ">

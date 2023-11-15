@@ -18,7 +18,7 @@ const container = {
   },
 };
 const item = {
-  hidden: { x: -50, opacity: 0 },
+  hidden: { x: -30, opacity: 0 },
   visible: {
     x: 0,
     opacity: 1,
@@ -26,7 +26,7 @@ const item = {
       delayChildren: 0.3,
       staggerChildren: 0.2,
       bounce: 0.4,
-      duration: 1,
+      duration: 0.5,
     },
   },
 };
@@ -69,7 +69,7 @@ const Login = () => {
       whileInView={"visible"}
       viewport={{ once: false, amount: 0.5 }}
       transition={{ staggerChildren: 0.5 }}
-      className="bg-white flex py-[100px] items-center justify-center"
+      className="bg-white flex pb-[100px] pt-[200px] items-center justify-center"
     >
       <div className="   h-[300px] sm:h-[400px] w-[90%] md:w-[90%]  lg:w-[60%]  flex element-shadow shadow-[0_14px_14px_rgba(0, 0, 0, 0.25),0_10px_10px_rgba(0,0,0,0.22)] rounded-[10px]">
         <div className=" flex-[2] flex flex-col items-center justify-center bg-[white] rounded-tl-[10px] rounded-bl-[10px]">
