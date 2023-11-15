@@ -1,4 +1,4 @@
-import imag1 from "../../assets/63110131796835.Y3JvcCw4NTAsNjY0LDAsMA.png";
+import imag1 from "../../assets/fp logo.png";
 import { motion } from "framer-motion";
 const textAnimate = {
   offscreen: { opacity: 0, x: -30 },

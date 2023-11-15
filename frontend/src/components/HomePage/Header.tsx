@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Icon from "@mdi/react";
 import { mdiHomeVariant } from "@mdi/js";
 import { mdiViewHeadline } from "@mdi/js";
-import imag1 from "../../assets/63110131796835.Y3JvcCw4NTAsNjY0LDAsMA.png";
+import imag1 from "../../assets/fp logo.png";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { handleLogout } from "../Context/Reducer";
