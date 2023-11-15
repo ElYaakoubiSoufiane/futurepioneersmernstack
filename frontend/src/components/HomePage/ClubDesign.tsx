@@ -30,6 +30,10 @@ export default function ClubDesign() {
       >
         <div>
           <motion.div
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            viewport={{ once: false, amount: 0.25 }}
+            transition={{ staggerChildren: 0.5 }}
             variants={imageAnimate}
             className="  hover:-translate-y-1 hover:scale-110 duration-300 element-center"
           >
@@ -39,6 +43,10 @@ export default function ClubDesign() {
           <div className="">
             {" "}
             <motion.div
+              initial={"offscreen"}
+              whileInView={"onscreen"}
+              viewport={{ once: false, amount: 0.25 }}
+              transition={{ staggerChildren: 0.5 }}
               variants={textAnimate}
               className="element-center px-[10%] md:px-[20%] text-center  text-black  items-center gap-[05px]  pt-[30px] flex flex-wrap"
             >
@@ -56,6 +64,10 @@ export default function ClubDesign() {
             </motion.div>
           </div>
           <motion.h1
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            viewport={{ once: false, amount: 0.25 }}
+            transition={{ staggerChildren: 0.5 }}
             variants={textAnimate}
             className=" pt-[20px]  pb-[30px] text-center text-[#333533] text-2xl font-bold"
           >
