@@ -43,7 +43,7 @@ app.use("/api/auth", authRoutes);
 
 app.use(
   cors({
-    origin: [process.env.frontUrl],
+    origin: [""],
     methods: ["GET", "POST"],
     credentials: true,
   })
