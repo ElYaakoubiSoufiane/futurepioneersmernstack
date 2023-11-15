@@ -19,11 +19,11 @@ function App() {
   const dispatch = useDispatch();
   const isLogged = useSelector((state: any) => state.auth.isLogged);
   const data = localStorage.getItem("token");
-  // if (data !== "") {
-  //   dispatch(handleLogin());
-  // } else {
-  //   dispatch(handleLogout());
-  // }
+  if (data !== "") {
+    dispatch(handleLogin());
+  } else {
+    dispatch(handleLogout());
+  }
   useEffect(() => {
     if (data !== "") {
       dispatch(handleLogin());
