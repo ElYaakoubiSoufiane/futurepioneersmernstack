@@ -69,7 +69,7 @@ const Login = () => {
       whileInView={"visible"}
       viewport={{ once: false, amount: 0.5 }}
       transition={{ staggerChildren: 0.5 }}
-      className="bg-white  py-[80px]  elelment-center"
+      className="bg-white  py-[80px]  element-center"
     >
       <div className="   h-[350px] sm:h-[400px] w-[90%] md:w-[90%]  lg:w-[60%]  flex element-shadow  rounded-[10px]">
         <div className=" flex-[2] flex flex-col items-center justify-center bg-[white] rounded-tl-[10px] rounded-bl-[10px]">
