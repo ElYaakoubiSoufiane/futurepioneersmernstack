@@ -8,7 +8,7 @@ export default async function LogOut() {
   const Navigate = useNavigate();
   const dispatch = useDispatch();
   useEffect(() => {
-    fetch("http://localhost:5000/api/users/logout", {
+    fetch("futurepioneersmernstack-c4ax.vercel.app/api/users/logout", {
       method: "GET",
       headers: {
         Accept: "application/json",
