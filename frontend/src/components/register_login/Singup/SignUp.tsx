@@ -98,7 +98,7 @@ const Signup = () => {
               onChange={(e) => setUsename(e.target.value)}
               value={username}
               required
-              className="[outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid border-[#bbbaba]  w-[200px] md:w-[330px] bg-[#e1e1e1] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]"
+              className="[outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid border-[#999999]  w-[200px] md:w-[330px] bg-[#ffffff] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]"
             />
             <input
               type="email"
@@ -107,14 +107,14 @@ const Signup = () => {
               onChange={(e) => setEmail(e.target.value)}
               value={email}
               required
-              className="[outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid border-[#bbbaba]  w-[200px] md:w-[330px] bg-[#e1e1e1] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]"
+              className="[outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid border-[#999999]  w-[200px] md:w-[330px] bg-[#ffffff] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]"
             />
 
             <select
               id="level"
               name="level"
               required
-              className="[outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid border-[#bbbaba]  w-[200px] md:w-[330px] bg-[#e1e1e1] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]"
+              className="[outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid border-[#999999]  w-[200px] md:w-[330px] bg-[#ffffff] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]"
               placeholder="CP / CI"
               value={level}
               onChange={(e) => setLevel(e.target.value)}
@@ -133,7 +133,7 @@ const Signup = () => {
               onChange={(e) => setPassword(e.target.value)}
               value={password}
               required
-              className="[outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid border-[#bbbaba]  w-[200px] md:w-[330px] bg-[#e1e1e1] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]"
+              className="[outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid border-[#999999]  w-[200px] md:w-[330px] bg-[#ffffff] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]"
             />
 
             {error && (
