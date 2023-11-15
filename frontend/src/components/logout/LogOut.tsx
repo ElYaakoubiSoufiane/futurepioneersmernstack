@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import {  handleLogout } from "../Context/Reducer";
-
+import { handleLogout } from "../Context/Reducer";
 
 export default async function LogOut() {
   const Navigate = useNavigate();
@@ -22,12 +21,11 @@ export default async function LogOut() {
 
           throw error;
         }
+        window.localStorage.setItem("token", "");
         Navigate("/LOGOUT");
         dispatch(handleLogout());
       })
       .catch((err) => console.log(err));
-
-  
   });
 
   return <div></div>;

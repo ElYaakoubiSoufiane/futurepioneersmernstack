@@ -47,7 +47,7 @@ const Login = () => {
     try {
       const url = "https://futurepioneersmernstack-c4ax.vercel.app/api/auth";
       const { data: res } = await axios.post(url, data);
-      localStorage.setItem("token", res.data);
+      window.localStorage.setItem("token", res.data);
       // console.log(res.data);
 
       dispatch(handleLogin());

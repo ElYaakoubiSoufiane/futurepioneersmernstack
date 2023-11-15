@@ -26,7 +26,7 @@ export default function Header() {
     const handleResize = () => {
       setWindowWidth(getWindowWidth());
     };
-
+    console.log(window.localStorage.getItem("token"));
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
