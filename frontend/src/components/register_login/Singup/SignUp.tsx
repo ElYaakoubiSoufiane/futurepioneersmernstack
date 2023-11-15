@@ -144,7 +144,7 @@ const Signup = () => {
             )}
             <button
               type="submit"
-              className="[outline:none]  text-white bg-[black]  font-bold md:text-[17px]  w-[70px] md:w-[180px] font-[bold] text-sm cursor-pointer px-0 py-3 element-center h-[10px] md:h-[30px] rounded-[20px] border-[none]"
+              className="[outline:none]  text-white bg-[#383737]  font-bold md:text-[17px]  w-[70px] md:w-[180px] font-[bold] text-sm cursor-pointer px-0 py-3 element-center h-[10px] md:h-[30px] rounded-[20px] border-[none]"
             >
               Sign Up
             </button>
