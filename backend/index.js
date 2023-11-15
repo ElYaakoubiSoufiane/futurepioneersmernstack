@@ -22,6 +22,8 @@ try {
     );
   });
 
+  app.get("/",(req,res)=>{
+    res.json("hzllo");})
   console.log("Connected to database successfully");
 } catch (error) {
   console.log(error);
