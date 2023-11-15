@@ -21,19 +21,20 @@ export default function Header() {
   if (isTrue) {
     setMenuiconcol("focus:bg-black focus:text-white");
   }
-
+ const dispatch = useDispatch();
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(getWindowWidth());
     };
     console.log(window.localStorage.getItem("token"));
+    
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   const [menuCol, setmenuCol] = useState("");
 
   const [MobileMenu, setMobileMenu] = useState(isTrue);
-  const dispatch = useDispatch();
+ 
   if (isTrue) {
     setmenuCol("focus:bg-black focus:text-white");
   }
@@ -61,7 +62,7 @@ export default function Header() {
       <div 
       /// <reference path="ref" />
       ref={headerRef}
-      className="z-10 fixed h-[47px] box-shadow mx-auto w-full bg-white">
+      className="z-10 fixed h-[47px] box-shadow mx-auto w-full">
         {isLogged ? (
           <nav className="container  fixed   max-w-full transition-colors duration-500">
             <div className=" max-w-auto px-2  z-10 h- sm:px-6 lg:px-8">
@@ -144,7 +145,7 @@ export default function Header() {
                   setMobileMenu((isTrue: any) => !isTrue);
                 }}
                 type="button"
-                className={`relative  rounded-md texte-[15px] text-black font-extrabold ${menuiconcol} focus:outline-none `}
+                className={`relative  rounded-md texte-[15px] text-black font-extrabold ${menuCol} focus:outline-none `}
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >

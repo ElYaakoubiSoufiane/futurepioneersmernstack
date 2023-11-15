@@ -100,6 +100,7 @@ const Signup = () => {
               required
               className="[outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid border-[#999999]  w-[200px] md:w-[330px] bg-[#ffffff] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]"
             />
+
             <input
               type="email"
               placeholder="Email"
