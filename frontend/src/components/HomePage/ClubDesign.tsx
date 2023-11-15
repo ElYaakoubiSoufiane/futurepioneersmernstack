@@ -1,9 +1,10 @@
 import imag1 from "../../assets/63110131796835.Y3JvcCw4NTAsNjY0LDAsMA.png";
 import { motion } from "framer-motion";
 const textAnimate = {
-  offscreen: { opacity: 0 },
+  offscreen: { opacity: 0, x: -30 },
   onscreen: {
     opacity: 1,
+    x: 0,
     transition: { type: "spring", bounce: 0.4, duration: 1 },
   },
 };

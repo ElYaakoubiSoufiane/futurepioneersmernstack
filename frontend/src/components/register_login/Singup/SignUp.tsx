@@ -45,8 +45,6 @@ const Signup = () => {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
 
-
-
     try {
       const url = "https://futurepioneersmernstack-c4ax.vercel.app/api/users";
       const { data: res } = await axios.post(url, data);
@@ -71,7 +69,7 @@ const Signup = () => {
       whileInView={"visible"}
       viewport={{ once: false, amount: 0.5 }}
       transition={{ staggerChildren: 0.5 }}
-      className="pt-[100px] w-full  bg-white element-cente flex items-center justify-center"
+      className="pt-[500px] w-full pb-[100px] bg-white element-cente flex items-center justify-center"
     >
       <div className="   h-[300px] element-shadow rounded-[10px]  sm:h-[400px] w-[90%] md:w-[90%]  lg:w-[60%]  flex ">
         <div className="flex-1 rounded-tl-[10px] rounded-bl-[10px] flex text-center flex-col items-center justify-center bg-black  ">
