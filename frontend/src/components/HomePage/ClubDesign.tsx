@@ -25,7 +25,7 @@ export default function ClubDesign() {
         whileInView={"onscreen"}
         viewport={{ once: false, amount: 0.25 }}
         transition={{ staggerChildren: 0.5 }}
-        className=" md:h-[650px] h-[800px] relative flex  element-center  max-w-full mx-auto  "
+        className=" md:h-[650px] h-[700px] relative flex  element-center  max-w-full mx-auto  "
       >
         <div>
           <motion.div

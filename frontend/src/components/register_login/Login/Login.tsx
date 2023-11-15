@@ -1,4 +1,4 @@
-import {  useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux/es/hooks/useDispatch";
@@ -47,7 +47,7 @@ const Login = () => {
     try {
       const url = "https://futurepioneersmernstack-c4ax.vercel.app/api/auth";
       const { data: res } = await axios.post(url, data);
-     localStorage.setItem("token", res.data);
+      localStorage.setItem("token", res.data);
       // console.log(res.data);
 
       dispatch(handleLogin());
@@ -69,7 +69,7 @@ const Login = () => {
       whileInView={"visible"}
       viewport={{ once: false, amount: 0.5 }}
       transition={{ staggerChildren: 0.5 }}
-      className="bg-white pt-[100px] flex items-center justify-center"
+      className="bg-white pt-[50px] flex items-center justify-center"
     >
       <div className="   h-[300px] sm:h-[400px] w-[90%] md:w-[90%]  lg:w-[60%]  flex element-shadow shadow-[0_14px_14px_rgba(0, 0, 0, 0.25),0_10px_10px_rgba(0,0,0,0.22)] rounded-[10px]">
         <div className=" flex-[2] flex flex-col items-center justify-center bg-[white] rounded-tl-[10px] rounded-bl-[10px]">
