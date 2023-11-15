@@ -29,7 +29,7 @@ export default function Header() {
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  },[]);
+  }, []);
 
   const [MobileMenu, setMobileMenu] = useState(isTrue);
   const dispatch = useDispatch();
@@ -210,14 +210,14 @@ export default function Header() {
                 </div>
                 <div className=" flex pt-[5px] element-center ">
                   <Link to="https://www.instagram.com/futurepioneers_ensaf/">
-                    <FaInstagram className="mx-[4px] font-bold text-[#000000]" />
+                    <FaInstagram className="mx-[4px] h-[20px]  text-[#000000]" />
                   </Link>
                   <Link to="https://ma.linkedin.com/company/future-pioneers-ensaf">
                     {" "}
                     <FaLinkedinIn className="mx-[6px]  text-[#000000]" />
                   </Link>
                   <Link to="https://web.facebook.com/FuturePioneersEnsaf/?_rdc=1&_rdr">
-                    <FaFacebookF className="mx-[4px]  text-[#000000]" />
+                    <FaFacebookF className="mx-[4px] text-  text-[#000000]" />
                   </Link>
                 </div>
               </div>
