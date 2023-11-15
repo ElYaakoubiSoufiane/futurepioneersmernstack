@@ -16,7 +16,7 @@ const container = {
   },
 };
 const item = {
-  hidden: { x:10, opacity: 0 },
+  hidden: { x: 10, opacity: 0 },
   visible: {
     x: 0,
     opacity: 1,
@@ -98,8 +98,7 @@ const Signup = () => {
               onChange={(e) => setUsename(e.target.value)}
               value={username}
               required
-              autoFocus
-              className="[outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid border-[#ddd]  w-[150px] md:w-[330px] bg-[#ffffff] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]"
+              className="[outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid border-[#bbbaba]  w-[200px] md:w-[330px] bg-[#e1e1e1] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]"
             />
             <input
               type="email"
@@ -108,14 +107,14 @@ const Signup = () => {
               onChange={(e) => setEmail(e.target.value)}
               value={email}
               required
-              className="[outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid border-[#ddd]  w-[150px] md:w-[330px] bg-[#ffffff] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]"
+              className="[outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid border-[#bbbaba]  w-[200px] md:w-[330px] bg-[#e1e1e1] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]"
             />
 
             <select
               id="level"
               name="level"
               required
-              className="[outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid border-[#ddd]  w-[150px] md:w-[330px] bg-[#ffffff] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]"
+              className="[outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid border-[#bbbaba]  w-[200px] md:w-[330px] bg-[#e1e1e1] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]"
               placeholder="CP / CI"
               value={level}
               onChange={(e) => setLevel(e.target.value)}
@@ -134,11 +133,11 @@ const Signup = () => {
               onChange={(e) => setPassword(e.target.value)}
               value={password}
               required
-              className="[outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid border-[#ddd]  w-[150px] md:w-[330px] bg-[#ffffff] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]"
+              className="[outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid border-[#bbbaba]  w-[200px] md:w-[330px] bg-[#e1e1e1] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]"
             />
 
             {error && (
-              <div className=" element-center w-[200px] md:w-[370px] text-[10px] md:text-sm bg-[#ff5a5a] text-[white] text-center mx-0 my-[5px] md:p-[15px] rounded-[5px]">
+              <div className=" element-center w-[150px] md:w-[370px] text-[10px] md:text-sm bg-[#ff5a5a] text-[white] text-center mx-0 my-[5px] md:p-[15px] rounded-[5px]">
                 {error}
               </div>
             )}

@@ -81,11 +81,11 @@ const Login = () => {
               type="email"
               placeholder="Email"
               name="email"
-              autoFocus
+         
               onChange={(e) => setEmail(e.target.value)}
               value={data.email}
               required
-              className="[outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid border-[#bbbaba]  w-[200px] md:w-[330px] bg-[#ffffff] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]"
+              className="[outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid border-[#bbbaba]  w-[200px] md:w-[330px] bg-[#e1e1e1] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]"
             />
             <input
               type="password"
@@ -94,10 +94,10 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
               value={data.password}
               required
-              className="   [outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid border-[#bbbaba]  w-[200px] md:w-[330px] bg-[#ffffff] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]]"
+              className="   [outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid border-[#bbbaba]  w-[200px] md:w-[330px] bg-[#e1e1e1] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]]"
             />
             {error && (
-              <div className="  element-center w-[150px] md:w-[370px] text-[13px] md:text-sm bg-[#ff5a5a] text-[white] h-[10px] text-center mx-0 my-[5px] md:p-[15px] rounded-[5px]">
+              <div className=" element-center w-[150px] md:w-[370px] text-[10px] md:text-sm bg-[#ff5a5a] text-[white] text-center mx-0 my-[5px] md:p-[15px] rounded-[5px]">
                 {error}
               </div>
             )}
