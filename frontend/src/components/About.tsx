@@ -40,7 +40,7 @@ export default function About() {
         >
           <img src={img1} alt="" className="object-cover h-[200px]   " />
         </motion.div>
-        <div className=" h-[700px] my-auto sm:h-[500px] md:h-[450px]   ">
+        <div className=" h-[600px] my-auto sm:h-[500px] md:h-[450px]   ">
           <motion.div
             variants={container}
             initial={"hidden"}
@@ -66,7 +66,7 @@ export default function About() {
             </motion.h2>
           </motion.div>
         </div>
-        <div className=" h-[700px] my-auto sm:h-[500px] md:h-[450px]  ">
+        <div className="  h-[600px] my-auto sm:h-[500px] md:h-[450px]  ">
           <motion.div
             variants={container}
             initial={"hidden"}
@@ -89,7 +89,7 @@ export default function About() {
             </motion.h2>
           </motion.div>
         </div>
-        <div className="  h-[700px] my-auto sm:h-[500px] md:h-[450px]   ">
+        <div className="   h-[600px] my-auto sm:h-[500px] md:h-[450px]   ">
           {" "}
           <motion.div
             variants={container}
@@ -113,7 +113,7 @@ export default function About() {
             </motion.h2>
           </motion.div>
         </div>
-        <div className=" h-[700px] my-auto sm:h-[600px]  md:w-[70%] mx-auto pt-[50px] md:h-auto ">
+        <div className=" h-[600px] my-auto sm:h-[600px]  md:w-[70%] mx-auto pt-[50px] md:h-auto ">
           <motion.div
             variants={container}
             initial={"hidden"}
