@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import img2 from "../../assets/compaign2.jpg";
 import img3 from "../../assets/campaign.jpg";
-import img from "../../assets/63110131796835.Y3JvcCw4NTAsNjY0LDAsMA.png";
-import { motion,  } from "framer-motion";
+import img from "../../assets/fp logo.png";
+import { motion } from "framer-motion";
 const container = {
   hidden: { opacity: 1, x: 20, scale: 0 },
   visible: {
