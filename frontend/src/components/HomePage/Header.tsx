@@ -29,7 +29,7 @@ export default function Header() {
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  },[]);
 
   const [MobileMenu, setMobileMenu] = useState(isTrue);
   const dispatch = useDispatch();
