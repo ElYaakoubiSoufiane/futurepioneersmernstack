@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import img1 from "./../assets/63110131796835.Y3JvcCw4NTAsNjY0LDAsMA.png";
+import img1 from "./../assets/fp logo.png";
 import { motion } from "framer-motion";
 
 const container = {
