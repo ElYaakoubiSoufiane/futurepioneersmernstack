@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { handleLogout } from "../Context/Reducer";
+import {  handleLogout } from "../Context/Reducer";
+
 
 export default async function LogOut() {
   const Navigate = useNavigate();
   const dispatch = useDispatch();
   useEffect(() => {
-    fetch("https://futurepioneers.vercel.app/api/users/logout", {
+    fetch("https://futurepioneersmernstack-c4ax.vercel.app/api/users/logout", {
       method: "GET",
       headers: {
         Accept: "application/json",
@@ -25,6 +26,8 @@ export default async function LogOut() {
         dispatch(handleLogout());
       })
       .catch((err) => console.log(err));
+
+  
   });
 
   return <div></div>;

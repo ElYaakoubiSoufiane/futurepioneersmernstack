@@ -16,7 +16,7 @@ const container = {
   },
 };
 const item = {
-  hidden: { x: 10, opacity: 0 },
+  hidden: { x:10, opacity: 0 },
   visible: {
     x: 0,
     opacity: 1,
@@ -46,7 +46,7 @@ const Signup = () => {
     e.preventDefault();
 
     try {
-      const url = "https://futurepioneers.vercel.app/api/users";
+      const url = "https://futurepioneersmernstack-c4ax.vercel.app/api/users";
       const { data: res } = await axios.post(url, data);
 
       console.log(res.message);
