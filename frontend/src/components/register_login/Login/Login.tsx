@@ -97,7 +97,7 @@ const Login = () => {
               className="   [outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid border-[#ddd]  w-[200px] md:w-[330px] bg-[#ffffff] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]]"
             />
             {error && (
-              <div className="  element-center w-[200px] md:w-[370px] text-[10px] md:text-sm bg-[#ff5a5a] text-[white] h-[10px] text-center mx-0 my-[5px] md:p-[15px] rounded-[5px]">
+              <div className="  element-center w-[200px] md:w-[370px] text-[10px] md:text-sm bg-[#00a8e8] text-[white] h-[10px] text-center mx-0 my-[5px] md:p-[15px] rounded-[5px]">
                 {error}
               </div>
             )}
