@@ -38,7 +38,7 @@ export default function TeamSection() {
       desc: "PRESEDENT  ",
       FILEIERE: "Embedded Systems and Industrial Intelligence",
 
-      name: "Mohamed Twiwl",
+      name: "Mohamed Touiouel",
     },
     {
       id: 1,
