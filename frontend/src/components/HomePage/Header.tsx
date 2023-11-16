@@ -135,14 +135,14 @@ export default function Header() {
                 </div>
                 <div className=" flex element-center ">
                   <Link to="https://www.instagram.com/futurepioneers_ensaf/">
-                    <FaInstagram className="mx-[4px] h-[20px] font- text-[#000000]" />
+                    <FaInstagram className="mx-[4px] h-[20px] " />
                   </Link>
                   <Link to="https://ma.linkedin.com/company/future-pioneers-ensaf">
                     {" "}
-                    <FaLinkedinIn className="  mx-[6px] h-[20px] text-[#000000]" />
+                    <FaLinkedinIn className="  mx-[6px] h-[20px] " />
                   </Link>
                   <Link to="https://web.facebook.com/FuturePioneersEnsaf/?_rdc=1&_rdr">
-                    <FaFacebookF className="mx-[4px]  text-[#000000]" />
+                    <FaFacebookF className="mx-[4px] " />
                   </Link>
                 </div>
               </div>
@@ -237,7 +237,7 @@ export default function Header() {
                   </Link>
                   <Link
                     to="/signup"
-                    className="bg-gray  pointer-events-auto text-[#000000] rounded-md  hover:text-[#949494] px-3 py-2 text-sm font-extrabold "
+                    className="bg-gray  pointer-events-auto bg-white rounded-md  hover:text-[#949494] px-3 py-2 text-sm font-extrabold "
                     aria-current="page"
                   >
                     Register
@@ -245,14 +245,14 @@ export default function Header() {
                 </div>
                 <div className=" flex pt-[5px] element-center ">
                   <Link to="https://www.instagram.com/futurepioneers_ensaf/">
-                    <FaInstagram className="mx-[4px] h-[40px]  text-[#000000]" />
+                    <FaInstagram className="mx-[4px] h-[40px]  " />
                   </Link>
                   <Link to="https://ma.linkedin.com/company/future-pioneers-ensaf">
                     {" "}
-                    <FaLinkedinIn className="mx-[6px] h-[40px] text-[#000000]" />
+                    <FaLinkedinIn className="mx-[6px] h-[40px]" />
                   </Link>
                   <Link to="https://web.facebook.com/FuturePioneersEnsaf/?_rdc=1&_rdr">
-                    <FaFacebookF className="mx-[4px]    text-[#000000]" />
+                    <FaFacebookF className="mx-[4px]   " />
                   </Link>
                 </div>
               </div>
