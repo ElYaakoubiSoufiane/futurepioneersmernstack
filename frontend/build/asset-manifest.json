@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.07833eac.css",
+    "main.js": "/static/js/main.615c559c.js",
+    "static/media/fp logo.png": "/static/media/fp logo.6aad8cd13e1db27c4890.png",
+    "static/media/compaign2.jpg": "/static/media/compaign2.0e85c8d5a243ab1caae3.jpg",
+    "static/media/campaign.jpg": "/static/media/campaign.236e5bc7ab148c7e456a.jpg",
+    "static/media/FB_IMG_1699002102603.jpg": "/static/media/FB_IMG_1699002102603.55474782256389d2f6e1.jpg",
+    "static/media/FB_IMG_1699002138474.jpg": "/static/media/FB_IMG_1699002138474.50407b5d1113e9582280.jpg",
+    "static/media/FB_IMG_1699002123662.jpg": "/static/media/FB_IMG_1699002123662.e186e6ba23ce3d27947a.jpg",
+    "static/media/FB_IMG_1699002118201.jpg": "/static/media/FB_IMG_1699002118201.66e125249c981fb3b29b.jpg",
+    "static/media/FB_IMG_1699002128649.jpg": "/static/media/FB_IMG_1699002128649.be52750007c80077a4d0.jpg",
+    "static/media/FB_IMG_1699002381406.jpg": "/static/media/FB_IMG_1699002381406.ce33d44c10d069d68477.jpg",
+    "static/media/FB_IMG_1699002387602.jpg": "/static/media/FB_IMG_1699002387602.1b2060bc2d3d6a285e7d.jpg",
+    "static/media/FB_IMG_1699002375896.jpg": "/static/media/FB_IMG_1699002375896.08ea94e06ed0883b4d20.jpg",
+    "static/media/FB_IMG_1699002360182.jpg": "/static/media/FB_IMG_1699002360182.f65d893c5693cd5cb2ff.jpg",
+    "static/media/FB_IMG_1699002353057.jpg": "/static/media/FB_IMG_1699002353057.9c5eb7f457760e5804ed.jpg",
+    "static/media/413-4139803_unknown-profile-profile-picture-unknown.png": "/static/media/413-4139803_unknown-profile-profile-picture-unknown.ca2beb36e194951d0794.png",
+    "index.html": "/index.html",
+    "main.07833eac.css.map": "/static/css/main.07833eac.css.map",
+    "main.615c559c.js.map": "/static/js/main.615c559c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07833eac.css",
+    "static/js/main.615c559c.js"
+  ]
+}
