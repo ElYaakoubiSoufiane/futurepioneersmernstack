@@ -15,7 +15,7 @@ function Footer() {
         <div className="md:flex pt-3  md:justify-between">
           <div className="element-center mb-1 md:mb-0">
             <a href="/" className="flex items-center">
-              <img src={img5} className="h-8 me-3" alt="FlowBite Logo" />
+              <img src="" className="h-8 me-3" alt="FlowBite Logo" />
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                 FUTURE PIONEERS
               </span>
