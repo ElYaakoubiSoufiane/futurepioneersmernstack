@@ -17,10 +17,8 @@ export default function Header() {
   const isTrue = false;
   // const navigate = useNavigate();
   const [windowWidth, setWindowWidth] = useState(getWindowWidth());
-  const [menuiconcol, setMenuiconcol] = useState("");
-  if (isTrue) {
-    setMenuiconcol("focus:bg-black focus:text-white");
-  }
+
+
   const dispatch = useDispatch();
   useEffect(() => {
     const handleResize = () => {
@@ -35,23 +33,25 @@ export default function Header() {
 
   const [MobileMenu, setMobileMenu] = useState(isTrue);
 
-  if (isTrue) {
-    setmenuCol("focus:bg-black focus:text-white");
-  }else {
-    setmenuCol("focus:bg-black focus:text-white");
-  }
 
   const headerRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const handleScroll = () => {
-      if (headerRef.current) {
+      if (headerRef.current||isTrue) {
         if (window.scrollY > 100) {
           headerRef.current.style.background = "#000000";
           headerRef.current.style.color = "#ffffff";
+          if (!isTrue) {
+            setmenuCol("focus:bg-white focus:text-black");
+          }
         
         } else {
           headerRef.current.style.background = "#ffffff";
           headerRef.current.style.color = "#000000";
+              
+  if (isTrue) {
+    setmenuCol("focus:bg-black focus:text-white");
+  }
       
         }
       }
