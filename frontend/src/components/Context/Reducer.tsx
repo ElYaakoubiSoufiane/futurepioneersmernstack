@@ -7,10 +7,10 @@ export const UserReducer = createSlice({
   initialState: initialValue,
 
   reducers: {
-    handleLogin: (state) => {
+    handleLogin: (state: any) => {
       state.isLogged = true;
     },
-    handleLogout: (state) => {
+    handleLogout: (state: any) => {
       state.isLogged = false;
       window.localStorage.setItem("token", "");
     },
