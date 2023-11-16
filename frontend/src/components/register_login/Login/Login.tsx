@@ -74,7 +74,7 @@ const Login = () => {
       <div className="   h-[350px] sm:h-[400px] w-[90%] md:w-[90%]  lg:w-[60%]  flex element-shadow  rounded-[10px]">
         <div className=" flex-[2] flex flex-col items-center justify-center bg-[white] rounded-tl-[10px] rounded-bl-[10px]">
           <form className="flex flex-col items-center" onSubmit={HandleSubmit}>
-            <h1 className="text-[17px] my-auto sm:text-[20px] p-7 font-black md:text-[40px] mt-0">
+            <h1 className="text-[17px] my-auto sm:text-[20px] p-7 font-black md:text-[35px] xl:text-[40px] mt-0">
               Login to Your Account
             </h1>
             <input
@@ -100,23 +100,23 @@ const Login = () => {
                 {error}
               </div>
             )}
-            <br />
+       <br />
             <button
               type="submit"
-              className="[outline:none]  font-bold md:text-[17px]  text-white bg-[black]   w-[70px] md:w-[180px] font-[bold] text-sm cursor-pointer px-0 py-3 element-center h-[10px] md:h-[30px] rounded-[20px] border-[none]"
+              className="[outline:none]  text-[16px] font-bold md:text-[20px]  text-white bg-[black]   w-[100px] md:w-[180px] font-[bold] text-sm cursor-pointer px-0 py-2 element-center  md:h-[45px] rounded-[15px] "
             >
               Log In
             </button>
           </form>
         </div>
         <div className="flex-1 flex flex-col items-center justify-center bg-black rounded-tr-[10px] rounded-br-[10px]">
-          <h1 className="text-[white]  font-bold text-[17px] md:text-[40px] self-center mb-[90px] md:mb-[100px]">
+          <h1 className="text-[white]  font-bold text-[17px] md:text-[37px] self-center mb-[90px] md:mb-[100px]">
             New Here ?
           </h1>
           <Link to="/signup">
             <button
               type="button"
-              className="[outline:none]  text-white bg-transparent  border-[1.4px] font-bold md:text-[17px]  w-[70px] md:w-[180px] font-[bold] text-sm cursor-pointer px-0 py-3 element-center h-[10px] md:h-[30px] rounded-[15px] border-white"
+              className="[outline:none] text-[16px]  text-white bg-transparent  border-[1.4px] font-bold md:text-[20px]  w-[90px] md:w-[180px] font-[bold] text-sm cursor-pointer px-0 py-2 element-center h-[36px] md:h-[45px] rounded-[15px] border-white"
             >
               Sign Up
             </button>

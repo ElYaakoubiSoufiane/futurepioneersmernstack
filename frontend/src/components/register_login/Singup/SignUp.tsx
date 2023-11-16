@@ -79,7 +79,7 @@ const Signup = () => {
           <Link to="/login">
             <button
               type="button"
-              className="[outline:none] text-white bg-transparent border-[1.4px] font-bold md:text-[17px]  w-[70px] md:w-[180px] font-[bold] text-sm cursor-pointer px-0 py-3 element-center h-[10px] md:h-[30px]  rounded-[15px] border-white"
+              className="[outline:none] text-[16px]  text-white bg-transparent  border-[1.4px] font-bold md:text-[20px]  w-[90px] md:w-[180px] font-[bold] text-sm cursor-pointer px-0 py-2 element-center h-[36px] md:h-[45px] rounded-[15px] border-white"
             >
               Log In
             </button>
@@ -144,7 +144,7 @@ const Signup = () => {
             )}
             <button
               type="submit"
-              className="[outline:none]  text-white bg-black  font-bold md:text-[17px]  w-[70px] md:w-[180px] font-[bold] text-sm cursor-pointer px-0 py-3 element-center h-[10px] md:h-[30px] rounded-[20px] border-[none]"
+              className="[outline:none]  text-[16px] font-bold md:text-[20px]  text-white bg-[black]   w-[100px] md:w-[180px] font-[bold] text-sm cursor-pointer px-0 py-2 element-center  md:h-[45px] rounded-[15px] "
             >
               Sing Up
             </button>

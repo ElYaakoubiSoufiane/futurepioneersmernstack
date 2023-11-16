@@ -37,6 +37,8 @@ export default function Header() {
 
   if (isTrue) {
     setmenuCol("focus:bg-black focus:text-white");
+  }else {
+    setmenuCol("focus:bg-black focus:text-white");
   }
 
   const headerRef = useRef<HTMLDivElement>(null);
@@ -46,15 +48,11 @@ export default function Header() {
         if (window.scrollY > 100) {
           headerRef.current.style.background = "#000000";
           headerRef.current.style.color = "#ffffff";
-          if (isTrue) {
-            setmenuCol("focus:bg-white focus:text-black");
-          }
+        
         } else {
           headerRef.current.style.background = "#ffffff";
           headerRef.current.style.color = "#000000";
-          if (!isTrue) {
-            setmenuCol("focus:bg-black focus:text-white");
-          }
+      
         }
       }
     };
@@ -155,7 +153,7 @@ export default function Header() {
                   setMobileMenu((isTrue: any) => !isTrue);
                 }}
                 type="button"
-                className={`relative  rounded-md texte-[18px]  font-extrabold ${menuCol} focus:outline-none `}
+                className={`relative  rounded-md texte-[18px]  font-extrabold ${menuCol}  `}
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
