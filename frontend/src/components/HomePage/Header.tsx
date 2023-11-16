@@ -1,4 +1,4 @@
-import React, { useEffect,useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Icon from "@mdi/react";
 import { mdiHomeVariant } from "@mdi/js";
 import { mdiViewHeadline } from "@mdi/js";
@@ -21,51 +21,50 @@ export default function Header() {
   if (isTrue) {
     setMenuiconcol("focus:bg-black focus:text-white");
   }
- const dispatch = useDispatch();
+  const dispatch = useDispatch();
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(getWindowWidth());
     };
     console.log(window.localStorage.getItem("token"));
-    
+
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   const [menuCol, setmenuCol] = useState("");
 
   const [MobileMenu, setMobileMenu] = useState(isTrue);
- 
+
   if (isTrue) {
     setmenuCol("focus:bg-black focus:text-white");
   }
-  export default function Header() {
-    const headerRef = useRef<HTMLDivElement>(null);
-    useEffect(() => {
-      const handleScroll = () => {
-         if (headerRef.current) {
-           if (window.scrollY > 100) {
-             headerRef.current.style.background = "#0c1524";
-            
-           } else {
-            headerRef.current.style.background = "#ffffff";
-            
-          }
-         }
-      };
-     
-      window.addEventListener("scroll", handleScroll);
-     
-      return () => {
-         window.removeEventListener("scroll", handleScroll);
-      };
-     }, []);
+
+  const headerRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (headerRef.current) {
+        if (window.scrollY > 100) {
+          headerRef.current.style.background = "#0c1524";
+        } else {
+          headerRef.current.style.background = "#ffffff";
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const isLogged = useSelector((state: any) => state.auth.isLogged);
   return (
     <>
-      <div 
-      /// <reference path="ref" />
-      ref={headerRef}
-      className="z-10 fixed h-[47px] box-shadow mx-auto w-full">
+      <div
+        /// <reference path="ref" />
+        ref={headerRef}
+        className="z-10 fixed h-[47px] box-shadow mx-auto w-full"
+      >
         {isLogged ? (
           <nav className="container  fixed   max-w-full transition-colors duration-500">
             <div className=" max-w-auto px-2  z-10 h- sm:px-6 lg:px-8">
