@@ -25,13 +25,14 @@ function App() {
   //   dispatch(handleLogout());
   // }
   useEffect(() => {
-    const data = localStorage.getItem("token");
+    const data = window.localStorage.getItem("token");
     if (data === ""||data===undefined) {
       dispatch(handleLogout());
     } else {
       dispatch(handleLogin());
     }
     window.scrollTo(0, 0);
+    
   }, []);
 //   useEffect(() => {
 //     if (!isLogged && location.pathname !== "/login" && location.pathname !== "/signup") {
