@@ -44,9 +44,17 @@ export default function Header() {
     const handleScroll = () => {
       if (headerRef.current) {
         if (window.scrollY > 100) {
-          headerRef.current.style.background = "#0c1524";
+          headerRef.current.style.background = "#000000";
+          headerRef.current.style.text = "#ffffff";
+          if (isTrue) {
+            setmenuCol("focus:bg-white focus:text-black");
+          }
         } else {
           headerRef.current.style.background = "#ffffff";
+          headerRef.current.style.text = "#000000";
+          if (!isTrue) {
+            setmenuCol("focus:bg-black focus:text-white");
+          }
         }
       }
     };
@@ -63,7 +71,7 @@ export default function Header() {
       <div
         /// <reference path="ref" />
         ref={headerRef}
-        className="z-10 fixed h-[47px] box-shadow mx-auto w-full"
+        className="z-10 fixed h-[49px] py-[2px] box-shadow m-auto w-full"
       >
         {isLogged ? (
           <nav className="container  fixed   max-w-full transition-colors duration-500">
@@ -73,7 +81,7 @@ export default function Header() {
                   <div className=" flex  flex-shrink-0 ">
                     <Link to={"/"}>
                       <img
-                        className="h-10 w-10 object-contain translate-x-5 top-0 bg-[#ffffff]  rounded-[50%] "
+                        className="h-10 w-10 object-contain translate-x-5 top-0 bg-transparent  rounded-[50%] "
                         src={imag1}
                         alt="Your Company"
                       />
@@ -84,7 +92,7 @@ export default function Header() {
                     <div className="flex space-x-4">
                       <Link
                         to="/"
-                        className="hover:bg-[#d0fcff]  text-black rounded-md px-3 py-1 text-sm font-medium"
+                        className="hover:bg-[#000000] hover:text-white   rounded-md px-3 py-1 text-sm font-medium"
                         aria-current="page"
                       >
                         {" "}
@@ -92,25 +100,25 @@ export default function Header() {
                       </Link>
                       <Link
                         to="/courses"
-                        className=" text-black font-extrabold  hover:bg-[#000000] hover:text-white    rounded-md px-3 py-2 text-sm "
+                        className=" font-extrabold  hover:bg-[#000000] hover:text-white    rounded-md px-3 py-2 text-sm "
                       >
                         Courses
                       </Link>
                       <Link
                         to="/campaign"
-                        className="text-black   hover:bg-[#000000] hover:text-white   rounded-md px-3 py-2 text-sm font-extrabold"
+                        className="   hover:bg-[#000000] hover:text-white   rounded-md px-3 py-2 text-sm font-extrabold"
                       >
                         Campaign
                       </Link>
                       <Link
                         to="/about"
-                        className="text-black   hover:bg-[#000000] hover:text-white   rounded-md px-3 py-2 text-sm font-extrabold"
+                        className=" hover:bg-[#000000] hover:text-white   rounded-md px-3 py-2 text-sm font-extrabold"
                       >
                         About
                       </Link>
 
                       <Link
-                        className="bg-gray text-black rounded-md  hover:bg-[#000000] hover:text-white   px-3 py-2 text-sm font-extrabold "
+                        className="bg-gray  rounded-md  hover:bg-[#000000] hover:text-white   px-3 py-2 text-sm font-extrabold "
                         aria-current="page"
                         onClick={() => {
                           dispatch(handleLogout());
@@ -147,7 +155,7 @@ export default function Header() {
                   setMobileMenu((isTrue: any) => !isTrue);
                 }}
                 type="button"
-                className={`relative  rounded-md texte-[15px] text-black font-extrabold ${menuCol} focus:outline-none `}
+                className={`relative  rounded-md texte-[18px]  font-extrabold ${menuCol} focus:outline-none `}
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
