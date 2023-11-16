@@ -46,7 +46,10 @@ export default function Header() {
            if (window.scrollY > 100) {
              headerRef.current.style.background = "#0c1524";
             
-           } 
+           } else {
+            headerRef.current.style.background = "#ffffff";
+            
+          }
          }
       };
      

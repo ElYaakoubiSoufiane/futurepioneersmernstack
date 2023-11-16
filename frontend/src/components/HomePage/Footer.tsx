@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import img5 from "../../assets/63110131796835.Y3JvcCw4NTAsNjY0LDAsMA.png";
+import img5 from "../../assets/fp logo.png";
 import { Link } from "react-router-dom";
 function Footer() {
   const [as, setas] = useState(["About", "Campaign", "Courses"]);
