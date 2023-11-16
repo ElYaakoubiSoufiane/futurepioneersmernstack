@@ -26,7 +26,7 @@ function App() {
   // }
   useEffect(() => {
     const data = localStorage.getItem("token");
-    if (data !== "") {
+    if (data !== ""||data===undefined) {
       dispatch(handleLogin());
     } else {
       dispatch(handleLogout());
