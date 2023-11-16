@@ -32,12 +32,12 @@ function App() {
       dispatch(handleLogin());
     }
     window.scrollTo(0, 0);
-  }, []);
-  useEffect(() => {
-    if (!isLogged && location.pathname !== "/login" && location.pathname !== "/signup") {
-      location.pathname = "/login";
-    }
- }, [isLogged, location]);
+  }, [isLogged,]);
+//   useEffect(() => {
+//     if (!isLogged && location.pathname !== "/login" && location.pathname !== "/signup") {
+//       location.pathname = "/login";
+//     }
+//  }, [isLogged, location]);
   console.log(isLogged);
   return (
     <>
