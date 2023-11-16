@@ -26,10 +26,10 @@ function App() {
   // }
   useEffect(() => {
     const data = localStorage.getItem("token");
-    if (data !== ""||data===undefined) {
-      dispatch(handleLogin());
-    } else {
+    if (data === ""||data===undefined) {
       dispatch(handleLogout());
+    } else {
+      dispatch(handleLogin());
     }
     window.scrollTo(0, 0);
   }, []);
