@@ -116,7 +116,7 @@ const Login = () => {
           <Link to="/signup">
             <button
               type="button"
-              className="[outline:none]  text-black bg-[white]  font-bold md:text-[17px]  w-[70px] md:w-[180px] font-[bold] text-sm cursor-pointer px-0 py-3 element-center h-[10px] md:h-[30px] rounded-[20px] border-[none]"
+              className="[outline:none]  text-white bg-transparent  font-bold md:text-[17px]  w-[70px] md:w-[180px] font-[bold] text-sm cursor-pointer px-0 py-3 element-center h-[10px] md:h-[30px] rounded-[15px] border-[#ffffff]"
             >
               Sign Up
             </button>
