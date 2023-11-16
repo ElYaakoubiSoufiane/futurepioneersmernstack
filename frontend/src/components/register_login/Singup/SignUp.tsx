@@ -81,7 +81,7 @@ const Signup = () => {
               type="button"
               className="[outline:none] text-white bg-transparent border-[1.4px] font-bold md:text-[17px]  w-[70px] md:w-[180px] font-[bold] text-sm cursor-pointer px-0 py-3 element-center h-[10px] md:h-[30px]  rounded-[15px] border-white"
             >
-              LOG IN
+              Log In
             </button>
           </Link>
         </div>
@@ -146,7 +146,7 @@ const Signup = () => {
               type="submit"
               className="[outline:none]  text-white bg-black  font-bold md:text-[17px]  w-[70px] md:w-[180px] font-[bold] text-sm cursor-pointer px-0 py-3 element-center h-[10px] md:h-[30px] rounded-[20px] border-[none]"
             >
-              SIGN UP
+              Sing Up
             </button>
           </form>
         </div>
