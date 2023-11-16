@@ -193,7 +193,7 @@ export default function Header() {
                         setMobileMenu(false);
                       }}
                       to="/campaign"
-                      className="text-black  text-center  hover:bg-[#000000] hover:text-white   rounded-md px-3 py-2 text-sm font-extrabold"
+                      className="text-black  text-center   hover:bg-[#000000] hover:text-white   rounded-md px-3 py-2 text-sm font-extrabold"
                     >
                       Campaign
                     </Link>
@@ -237,7 +237,7 @@ export default function Header() {
                   </Link>
                   <Link
                     to="/signup"
-                    className="bg-gray  pointer-events-auto bg-white rounded-md  hover:text-[#949494] px-3 py-2 text-sm font-extrabold "
+                    className="bg-gray  pointer-events-auto bg-white text-black rounded-md  hover:text-[#949494] px-3 py-2 text-sm font-extrabold "
                     aria-current="page"
                   >
                     Register

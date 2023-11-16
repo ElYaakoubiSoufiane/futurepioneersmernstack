@@ -3,7 +3,7 @@ import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux/es/hooks/useDispatch";
 import { handleLogin } from "../../Context/Reducer";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion";import {EyeInvisibleOutlined,EyeOutlined}from "@ant-design/icons";
 const container = {
   hidden: { opacity: 1, y: -20, scale: 0 },
   visible: {
@@ -33,7 +33,7 @@ const item = {
 const Login = () => {
   const [error, setError] = useState("");
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [password, setPassword] = useState("");const [visible,setVisible]=useState(true)
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const data = {
@@ -85,7 +85,15 @@ const Login = () => {
               value={data.email}
               required
               className="[outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid border-[#999999]  w-[200px] md:w-[330px] bg-[#ffffff] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]"
-            />
+            /><div>   <input
+            type={visible?"text" : "password"}
+            placeholder="Password"
+            name="password"
+            onChange={(e) => setPassword(e.target.value)}
+            value={data.password}
+            required
+            className="   [outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid border-[#999999]  w-[200px] md:w-[330px] bg-[#ffffff] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]]"
+          /> <div>  {visible? <EyeOutlined/>: <EyeInvisibleOutlined/>?<</div></div>
             <input
               type="password"
               placeholder="Password"

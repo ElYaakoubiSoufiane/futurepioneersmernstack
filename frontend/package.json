@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^5.2.6",
     "@ionic/react": "^7.5.4",
     "@mdi/js": "^7.3.67",
     "@mdi/react": "^1.6.1",
@@ -47,9 +48,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix client  && npm run build --prefix client"
-   },
-  
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client  && npm run build --prefix client"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
