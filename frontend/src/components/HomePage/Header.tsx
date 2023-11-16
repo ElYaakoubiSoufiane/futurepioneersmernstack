@@ -37,7 +37,7 @@ export default function Header() {
   const headerRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const handleScroll = () => {
-      if (headerRef.current||isTrue) {
+      if (headerRef.current) {
         if (window.scrollY > 100) {
           headerRef.current.style.background = "#000000";
           headerRef.current.style.color = "#ffffff";
