@@ -32,7 +32,7 @@ function App() {
       dispatch(handleLogin());
     }
     window.scrollTo(0, 0);
-  }, [isLogged,]);
+  }, []);
 //   useEffect(() => {
 //     if (!isLogged && location.pathname !== "/login" && location.pathname !== "/signup") {
 //       location.pathname = "/login";
