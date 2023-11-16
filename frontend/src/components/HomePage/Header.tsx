@@ -51,7 +51,7 @@ export default function Header() {
           }
         } else {
           headerRef.current.style.background = "#ffffff";
-          headerRef.current.style.color = "#ffffff";
+          headerRef.current.style.color = "#000000";
           if (!isTrue) {
             setmenuCol("focus:bg-black focus:text-white");
           }
