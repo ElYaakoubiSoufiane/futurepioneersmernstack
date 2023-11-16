@@ -75,7 +75,7 @@ export default function Header() {
         ref={headerRef}
         className="z-10 fixed h-[49px] py-[2px] box-shadow m-auto w-full"
       >
-        {isLogged ? (
+        
           <nav className="container  fixed    max-w-full transition-colors duration-500">
             <div className=" max-w-auto px-2  z-10 h- sm:px-6 lg:px-8">
               <div className="relative flex w-[100%] items-center justify-between">
@@ -224,43 +224,7 @@ export default function Header() {
               </div>
             </div>
           </nav>
-        ) : (
-          <nav className=" max-w-full transition-colors duration-500 ">
-            <div className=" max-w-auto px-2  z-10 h- sm:px-6 lg:px-8">
-              <div className="relative flex w-[100%] items-center justify-between">
-                <div className=" pl-[10px] pt-2 flex-1 text-center   items-center justify-center  sm:items-stretch sm:justify-start">
-                  {" "}
-                  <Link
-                    to="/login"
-                    className="bg-gray text-white rounded-md bg-[#000000] hover:bg-[#949494] hover:text-white   px-3 py-2 text-sm font-extrabold "
-                    aria-current="page"
-                  >
-                    Login
-                  </Link>
-                  <Link
-                    to="/signup"
-                    className="bg-gray  pointer-events-auto bg-white text-black rounded-md  hover:text-[#949494] px-3 py-2 text-sm font-extrabold "
-                    aria-current="page"
-                  >
-                    Register
-                  </Link>
-                </div>
-                <div className=" flex pt-[5px] element-center ">
-                  <Link to="https://www.instagram.com/futurepioneers_ensaf/">
-                    <FaInstagram className="mx-[4px] h-[40px]  " />
-                  </Link>
-                  <Link to="https://ma.linkedin.com/company/future-pioneers-ensaf">
-                    {" "}
-                    <FaLinkedinIn className="mx-[6px] h-[40px]" />
-                  </Link>
-                  <Link to="https://web.facebook.com/FuturePioneersEnsaf/?_rdc=1&_rdr">
-                    <FaFacebookF className="mx-[4px]   " />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </nav>
-        )}
+        
       </div>
       <br />
     </>
