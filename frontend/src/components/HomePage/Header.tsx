@@ -45,13 +45,13 @@ export default function Header() {
       if (headerRef.current) {
         if (window.scrollY > 100) {
           headerRef.current.style.background = "#000000";
-          headerRef.current.style.text = "#ffffff";
+          headerRef.current.style.color = "#ffffff";
           if (isTrue) {
             setmenuCol("focus:bg-white focus:text-black");
           }
         } else {
           headerRef.current.style.background = "#ffffff";
-          headerRef.current.style.text = "#000000";
+          headerRef.current.style.color = "#ffffff";
           if (!isTrue) {
             setmenuCol("focus:bg-black focus:text-white");
           }
