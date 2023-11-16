@@ -24,9 +24,11 @@ function App() {
   // } else {
   //   dispatch(handleLogout());
   // }
+  console.log(isLogged);
+
   useEffect(() => {
     const data = window.localStorage.getItem("token");
-    if (data === ""||data===undefined) {
+    if (data === ""||data===null) {
       dispatch(handleLogout());
     } else {
       dispatch(handleLogin());
