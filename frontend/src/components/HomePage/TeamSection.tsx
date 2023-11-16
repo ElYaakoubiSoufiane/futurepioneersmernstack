@@ -57,7 +57,7 @@ export default function TeamSection() {
       id: 3,
       desc: "Member",
       FILEIERE: "Embedded Systems and Industrial Intelligence",
-      name: "Elyaakoubi Soufiane",
+      name: "El Yaakoubi Soufiane",
     },
   ]);
   return (
