@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./App.css";
 import Header from "./components/HomePage/Header";
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Route,useLocation , Routes } from "react-router-dom";
 import Home from "./components/HomePage/Home";
 import Course from "./components/HeaderLinks/Courses";
 import Footer from "./components/HomePage/Footer";
@@ -18,7 +18,7 @@ import { handleLogin, handleLogout } from "./components/Context/Reducer";
 function App() {
   const dispatch = useDispatch();
   const isLogged = useSelector((state: any) => state.auth.isLogged);
- 
+  const location = useLocation();
   // if (data !== "") {
   //   dispatch(handleLogin());
   // } else {
@@ -33,7 +33,11 @@ function App() {
     }
     window.scrollTo(0, 0);
   }, []);
-
+  useEffect(() => {
+    if (!isLogged && location.pathname !== "/login" && location.pathname !== "/signup") {
+      location.pathname = "/login";
+    }
+ }, [isLogged, location]);
   console.log(isLogged);
   return (
     <>
