@@ -75,7 +75,7 @@ export default function TeamSection() {
             >
               <motion.div
                 variants={item}
-                className=" transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300  bg-black  w-[300px] md:w-[500px]   rounded-[10px] p-[20px] element-shadow"
+                className=" transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300  bg-[#023047]    w-[300px] md:w-[500px]   rounded-[10px] p-[20px] element-shadow"
               >
                 <div className="  grid  h-[70px]   grid-rows-2 text-center ">
                   <div className="element-center  pb-[5px]">
@@ -102,7 +102,7 @@ export default function TeamSection() {
               </motion.div>
               <motion.div
                 variants={item}
-                className=" transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 bg-black w-[300px] md:w-[500px]   rounded-[10px] p-[20px] element-shadow"
+                className=" transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 bg-[#023047]   w-[300px] md:w-[500px]   rounded-[10px] p-[20px] element-shadow"
               >
                 <div className="  grid  h-[70px]  grid-rows-2 text-center ">
                   <div className="element-center pb-[5px]">
@@ -130,7 +130,7 @@ export default function TeamSection() {
 
               <motion.div
                 variants={item}
-                className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 bg-black w-[300px] md:w-[500px]   rounded-[10px] p-[20px] element-shadow"
+                className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 bg-[#023047]   w-[300px] md:w-[500px]   rounded-[10px] p-[20px] element-shadow"
               >
                 <div className="  grid  h-[70px]  grid-rows-2 text-center ">
                   <div className="element-center pb-[5px]">
@@ -157,7 +157,7 @@ export default function TeamSection() {
               </motion.div>
               <motion.div
                 variants={item}
-                className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 bg-black w-[300px] md:w-[500px]   rounded-[10px] p-[20px] element-shadow"
+                className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 bg-[#023047]   w-[300px] md:w-[500px]   rounded-[10px] p-[20px] element-shadow"
               >
                 <div className="  grid  h-[70px]  grid-rows-2 text-center ">
                   <div className="element-center pb-[5px]">

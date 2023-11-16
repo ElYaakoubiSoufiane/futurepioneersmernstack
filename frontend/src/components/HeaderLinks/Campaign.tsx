@@ -45,8 +45,8 @@ export default function Campaign() {
             <motion.div variants={item} className="w-[100%]">
               <img className="mx-auto h-[120px]" src={img} alt="" />
             </motion.div>
-            <figure className=" element-shadow rounded-[10px]  w-[70%] mx-auto element-center   mt-10  ">
-              <blockquote className=" mx-auto w-[100%] max-w-full   text-center text-xl text-gray-900 sm:text-2xl sm:leading-9">
+            <figure className=" element-shadow rounded-[10px] bg-[#023047]   w-[70%] mx-auto element-center   mt-10  ">
+              <blockquote className=" mx-auto w-[100%] max-w-full   text-center text-xl text-white sm:text-2xl sm:leading-9">
                 <div>
                   <motion.h1
                     variants={item}

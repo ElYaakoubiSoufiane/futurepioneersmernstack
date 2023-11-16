@@ -41,11 +41,11 @@ function App() {
 //       location.pathname = "/login";
 //     }
 //  }, [isLogged, location]);
-  console.log(isLogged);
+  // console.log(isLogged);
   return (
-    <>
-      {" "}
-      {isLogged ? (
+
+      // {" "}
+      // {/* {isLogged ? ( */}
         <>
           <Header />
           <Routes>
@@ -57,20 +57,21 @@ function App() {
             <Route path="/login" element={<Navigate replace to="/" />} />
           </Routes>
           <Footer />
-        </>
-      ) : (
-        <>
-          <Header />
+            </>
+        // {/* </>
+      // ) : (
+      //   <>
+      //     <Header />
 
-          <Routes>
-            <Route path="/login" element={<Login />} />
-            <Route path="/" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
-          </Routes>
-          <ClubDesign />
-        </>
-      )}
-    </>
+      //     <Routes>
+      //       <Route path="/login" element={<Login />} />
+      //       <Route path="/" element={<Login />} />
+      //       <Route path="/signup" element={<Signup />} />
+      //     </Routes>
+      //     <ClubDesign />
+      //   </>
+      // )} */}
+  
   );
 }
 

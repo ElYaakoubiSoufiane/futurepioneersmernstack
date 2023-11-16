@@ -16,7 +16,7 @@ const container = {
   },
 };
 const item = {
-  hidden: { opacity: 0, scale: 0 },
+  hidden: { opacity: 0.5, scale: 0 },
   visible: {
     opacity: 1,
     scale: 1,
@@ -47,7 +47,7 @@ export default function About() {
             whileInView={"visible"}
             viewport={{ once: false, amount: 0.5 }}
             transition={{ staggerChildren: 0.5 }}
-            className="element-center text-center  md:w-[70%] mx-auto bg-black text-white rounded-[10px] element-shadow   items-center gap-[05px] px-[40px] pt-[30px] flex flex-wrap"
+            className="element-center text-center  md:w-[70%] mx-auto bg-[#023047] text-white rounded-[10px] element-shadow   items-center gap-[05px] px-[40px] pt-[30px] flex flex-wrap"
           >
             <motion.h1
               variants={item}
@@ -72,7 +72,7 @@ export default function About() {
             initial={"hidden"}
             whileInView={"visible"}
             viewport={{ once: false, amount: 0.5 }}
-            className="element-center text-center  md:w-[70%] mx-auto rounded-[10px] bg-black text-white element-shadow  my-6 items-center gap-[05px] px-[40px] pt-[30px] flex flex-wrap"
+            className="element-center text-center  md:w-[70%] mx-auto rounded-[10px] bg-[#023047] text-white element-shadow  my-6 items-center gap-[05px] px-[40px] pt-[30px] flex flex-wrap"
           >
             <motion.h1
               variants={item}
@@ -96,7 +96,7 @@ export default function About() {
             initial={"hidden"}
             whileInView={"visible"}
             viewport={{ once: false, amount: 0.5 }}
-            className="element-center my-auto  md:w-[70%] mx-auto text-center rounded-[10px] bg-black text-white my-6 element-shadow  items-center gap-[05px] px-[40px] pt-[30px] flex flex-wrap"
+            className="element-center my-auto  md:w-[70%] mx-auto text-center rounded-[10px] bg-[#023047] text-white my-6 element-shadow  items-center gap-[05px] px-[40px] pt-[30px] flex flex-wrap"
           >
             <motion.h1
               variants={item}
@@ -119,7 +119,7 @@ export default function About() {
             initial={"hidden"}
             whileInView={"visible"}
             viewport={{ once: false, amount: 0.5 }}
-            className="element-center text-center rounded-[10px] bg-black text-white element-shadow pX-[0%]   items-center gap-[05px] px-[40px]  flex flex-wrap"
+            className="element-center text-center rounded-[10px] bg-[#023047] text-white element-shadow pX-[0%]   items-center gap-[05px] px-[40px]  flex flex-wrap"
           >
             <motion.h1
               variants={item}

@@ -36,18 +36,22 @@ export default function Header() {
 
   const headerRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
+    
     const handleScroll = () => {
+    
       if (headerRef.current) {
-        if (window.scrollY > 100) {
-          headerRef.current.style.background = "#000000";
-          headerRef.current.style.color = "#ffffff";
+        headerRef.current.style.background = "#fbc53a";
+          headerRef.current.style.color = "#000000";
+        if (window.scrollY < 100) {
+          headerRef.current.style.background = "#fbc53a";
+          headerRef.current.style.color = "#000000";
           if (!isTrue) {
             setmenuCol("focus:bg-white focus:text-black");
           }
         
         } else {
-          headerRef.current.style.background = "#ffffff";
-          headerRef.current.style.color = "#000000";
+          headerRef.current.style.background = "#000000";
+          headerRef.current.style.color = "#fbc53a";
               
   if (isTrue) {
     setmenuCol("focus:bg-black focus:text-white");
@@ -72,7 +76,7 @@ export default function Header() {
         className="z-10 fixed h-[49px] py-[2px] box-shadow m-auto w-full"
       >
         {isLogged ? (
-          <nav className="container  fixed   max-w-full transition-colors duration-500">
+          <nav className="container  fixed    max-w-full transition-colors duration-500">
             <div className=" max-w-auto px-2  z-10 h- sm:px-6 lg:px-8">
               <div className="relative flex w-[100%] items-center justify-between">
                 <div className="flex  pt-2 flex-1 items-center justify-center  sm:items-stretch sm:justify-start">
@@ -115,7 +119,7 @@ export default function Header() {
                         About
                       </Link>
 
-                      <Link
+                      {/* <Link
                         className="bg-gray  rounded-md  hover:bg-[#000000] hover:text-white   px-3 py-2 text-sm font-extrabold "
                         aria-current="page"
                         onClick={() => {
@@ -125,7 +129,7 @@ export default function Header() {
                         to="/login"
                       >
                         LogOut
-                      </Link>
+                      </Link> */}
                     </div>
 
                     <div className="flex space-x-4"></div>
@@ -204,7 +208,7 @@ export default function Header() {
                     >
                       About
                     </Link>
-                    <Link
+                    {/* <Link
                       to="/LOGIN"
                       className="bg-gray text-black rounded-md  text-center hover:bg-[#000000] hover:text-white   px-3 py-2 text-sm font-extrabold "
                       aria-current="page"
@@ -214,7 +218,7 @@ export default function Header() {
                       }}
                     >
                       LogOut
-                    </Link>
+                    </Link> */}
                   </>
                 )}
               </div>
