@@ -105,7 +105,7 @@ const Login = () => {
               type="submit"
               className="[outline:none]  font-bold md:text-[17px]  text-white bg-[black]   w-[70px] md:w-[180px] font-[bold] text-sm cursor-pointer px-0 py-3 element-center h-[10px] md:h-[30px] rounded-[20px] border-[none]"
             >
-              Log In
+              LOG IN 
             </button>
           </form>
         </div>
@@ -118,7 +118,7 @@ const Login = () => {
               type="button"
               className="[outline:none]  text-white bg-transparent  font-bold md:text-[17px]  w-[70px] md:w-[180px] font-[bold] text-sm cursor-pointer px-0 py-3 element-center h-[10px] md:h-[30px] rounded-[15px] border-white"
             >
-              Sign Up
+              SIGN UP
             </button>
           </Link>
         </div>
