@@ -12,15 +12,16 @@ const container = {
     transition: {
       delayChildren: 0.3,
       staggerChildren: 0.2,
+      bounce: 0.4, duration: 0.5 
     },
   },
 };
 const item = {
-  hidden: { y: 10, opacity: 0 },
+  hidden: { opacity: 0 },
   visible: {
-    y: 0,
+   
     opacity: 1,
-    transition: { bounce: 0.4, duration: 1 },
+    transition: { bounce: 0.4, duration: 0.5 },
   },
 };
 export default function TeamSection() {
