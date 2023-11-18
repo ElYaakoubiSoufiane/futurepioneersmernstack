@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
-import pic1 from "../../assets/FB_IMG_1699002353057.jpg";
-import pic2 from "../../assets/FB_IMG_1699002360182.jpg";
-import pic3 from "../../assets/FB_IMG_1699002375896.jpg";
-import pic4 from "../../assets/FB_IMG_1699002381406.jpg";
-import pic5 from "../../assets/FB_IMG_1699002387602.jpg";
-import pic6 from "../../assets/FB_IMG_1699002102603.jpg";
-import pic7 from "../../assets/FB_IMG_1699002118201.jpg";
-import pic8 from "../../assets/FB_IMG_1699002123662.jpg";
-import pic9 from "../../assets/FB_IMG_1699002128649.jpg";
-import pic10 from "../../assets/FB_IMG_1699002138474.jpg";
+import pic1 from "../../assets/Religieux/IMG_2769.jpg";
+import pic2 from "../../assets/Religieux/IMG_2770.jpg";
+import pic3 from "../../assets/Religieux/IMG_2771.jpg";
+import pic4 from "../../assets/Religieux/IMG_2772.jpg";
+import pic5 from "../../assets/Religieux/IMG_2773.jpg";
+import pic6 from "../../assets/Religieux/IMG_2774.jpg";
+import pic7 from "../../assets/Religieux/IMG_2777.jpg";
+import pic8 from "../../assets/Religieux/IMG_2774.jpg";
+import pic9 from "../../assets/Religieux/IMG_2779.jpg";
+
 
 
 import 'swiper/css';
@@ -23,7 +23,9 @@ import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import {EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 
 import './StylePic.css'
-const  images = [pic10, pic9, pic8, pic7, pic6, pic5, pic4, pic3, pic2, pic1];
+const  images = [
+ pic9, pic8, pic7, pic6, pic5, pic4, pic3, pic2, pic1
+];
 
 
 export default function ReligionActivitiesPict() {
@@ -35,7 +37,7 @@ export default function ReligionActivitiesPict() {
   
   return (
     
-<div className=" py-[100px] h-[800px] ">
+<div className="continer_Swiper py-[100px] h-[800px] ">
       <Swiper
         effect={'coverflow'}
         grabCursor={true}

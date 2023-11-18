@@ -54,7 +54,7 @@ body {
   background: var(--bg);
 }
 
- .container {
+ .continer_Swiper{
   /* max-width: 124rem; */
   /* padding: 4rem 1rem; */
   margin: 0 auto;
@@ -93,6 +93,9 @@ height: 350px;
 
   }
 } 
+@media(max-width: 320px){ 
+  html {font-size: 10px}
+}
  @media (min-height: 500px) {
   .swiper_container {
     height: 40rem;
@@ -167,7 +170,7 @@ width: 350px;
 }
 
 .slider-controler .slider-arrow {
-  background: #000000;
+  background: #ffffff;
   width: 2rem;
   height: 2rem;
   border-radius: 50%;

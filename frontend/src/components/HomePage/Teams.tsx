@@ -50,9 +50,9 @@ img8
       }, []);
       
       return (<>
-        <div>
-        <br /></div>
-    <div className=" py-[80px] h-[900px] ">
+        {/* <div className="text-center   element-shadow bg-slate-400 rounded-[12px]  h-[50px] mx-auto w-[150px] my-[60px] font-bold   text-4xl">
+        <h1>TEAMS</h1></div> */}
+    <div className=" continer_Swiper py-[80px] h-[900px] ">
           <Swiper
             effect={'coverflow'}
             grabCursor={true}

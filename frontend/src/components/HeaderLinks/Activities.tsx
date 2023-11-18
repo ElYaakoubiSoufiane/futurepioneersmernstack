@@ -80,7 +80,7 @@ export default function Activities() {
   return (
     // <InView as="div" onChange={handleInView}>
   
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-white py-24 h-[1200px] md:h-[900px] sm:py-32">
     <div className="mx-auto max-w-7xl px-6 lg:px-8">
       <div className="mx-auto  w-full max-w-2xl ">
         <h2 className="text-3xl font-bold tracking-tight element-center text-gray-900 sm:text-4xl">Activities</h2 >
@@ -91,45 +91,7 @@ export default function Activities() {
     {/* //     variants={container}
     //     initial="hidden"*/ }
    <div   className="mx-auto  mt-5 grid max-w-2xl  grid-cols-1 gap-x-8 gap-y-16  border-gray-200 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-        <article  className="flex max-w-xl h-[230px]  bg-[#003566] flex-col element-shadow rounded-[10px] items-start justify-between">
-          <div className="element-center w-full "> <div className=" flex items-center gap-x-4 text-xs">
-     <h1 className="text-2xl font-bold tracking-tight  text-white py-3  sm:text-2xl">Religious Activities</h1>
-      
-          </div ></div>
-         
-          <div className="group relative">
-            <h3 className="mt-3 text-lg font-semibold leading-6 text-white group-hover:text-gray-600">
-           
-            </h3>
-            <p className="mt-5 line-clamp-3 px-10 md:px-4 text-sm leading-6 mx-auto text-gray-400">{data[0].desc}</p >
-          </div>
-          <div className=" mx-auto relative my-auto flex items-center gap-x-4">
-          <div className="">
-          <img src={imag1} alt="" className="h-10 w-10  rounded-full bg-gray-50" />
-</div>
-            <div className="text-sm  w-[50%]  leading-6">
-              <p className="font-semibold text-center text-white">
-             
-                  <span className=" absoluteinset-0"></span >
-             Soufiane Elyaakoubi
-               
-              </p>
-            
-         
-        </div>
-      
-         <Link
-         to="/activities/religion"
-                   className=" bg-[#ffc300] w-[110px] right-1 text-[15px]  text-black text-center hover:bg-white hover:border hover:border-black hover:text-black  font-bold py-2 px-3 rounded-[10px]"
 
-         >
-         
-         <button>Read More</button>
-         </Link>
-        
-            
-          </div>
-        </article>
         <article  className="flex max-w-xl h-[230px]  bg-[#003566] flex-col element-shadow rounded-[10px] items-start justify-between">
           <div className="element-center w-full "> <div className=" flex items-center gap-x-4 text-xs">
      <h1 className="text-2xl font-bold tracking-tight  text-white py-3  sm:text-2xl">Social Activities</h1>
@@ -144,13 +106,18 @@ export default function Activities() {
           </div>
           <div className=" mx-auto relative my-auto flex items-center gap-x-4">
           <div className="">
-          <img src={imag1} alt="" className="h-10 w-10  rounded-full bg-gray-50" />
-</div>
-            <div className="text-sm  w-[50%]  leading-6">
-              <p className="font-semibold text-center text-white">
+          <img src={imag1} alt="" className="h-10 w-10  rounded-full bg-gray-50" /></div>
+          <div className="text-sm  w-[50%]  leading-6">
+              <p className="font-semibold mx-[10px] text-center text-white">
              
                   <span className=" absoluteinset-0"></span >
-             Soufiane Elyaakoubi
+             MalaK EL Aissi
+               
+              </p>
+              <p className="font-semibold mx-[10px] text-center text-white">
+             
+                  <span className=" absoluteinset-0"></span >
+             Ibtissam Rfig
                
               </p>
             
@@ -159,7 +126,56 @@ export default function Activities() {
       
          <Link
          to="/activities/social"
-                   className=" bg-[#ffc300] w-[110px] right-1 text-[15px]  text-black text-center hover:bg-white hover:border hover:border-black hover:text-black  font-bold py-2 px-3 rounded-[10px]"
+                   className=" bg-[#ffc300] w-[100px] right-1 text-[15px]  text-black text-center hover:bg-white hover:border hover:border-black hover:text-black  font-bold py-2 px-1 rounded-[10px]"
+
+         >
+         
+         <button>Read More</button>
+         </Link>
+        
+            
+          </div>
+          
+          
+          
+          
+        </article>
+        <article  className="flex max-w-xl h-[230px]  bg-[#003566] flex-col element-shadow rounded-[10px] items-start justify-between">
+          <div className="element-center w-full "> <div className=" flex items-center gap-x-4 text-xs">
+     <h1 className="text-2xl font-bold tracking-tight  text-white py-2 px-5 text-center mx-auto  sm:text-2xl">Scientific and cultural activities</h1>
+      
+          </div ></div>
+         
+          <div className="group relative">
+            <h3 className="mt-1text-lg font-semibold leading-6 text-white group-hover:text-gray-600">
+           
+            </h3>
+            <p className="mt-3 line-clamp-3 px-10 md:px-4 text-sm leading-6 mx-auto text-gray-400">{data[2].desc}</p >
+          </div>
+          <div className=" mx-auto relative my-auto flex items-center gap-x-4">
+          <div className="">
+          <img src={imag1} alt="" className="h-10 w-10  rounded-full bg-gray-50" />
+</div>
+<div className="text-sm  w-[50%]  leading-6">
+              <p className="font-semibold mx-[10px] text-center text-white">
+             
+                  <span className=" absoluteinset-0"></span >
+            Omar Mojahid
+               
+              </p>
+              <p className="font-semibold mx-[10px] text-center text-white">
+             
+                  <span className=" absoluteinset-0"></span >
+             Manal El Coch
+               
+              </p>
+            
+         
+        </div>
+      
+         <Link
+         to="/activities/cultural"
+         className=" bg-[#ffc300] w-[100px] right-1 text-[15px]  text-black text-center hover:bg-white hover:border hover:border-black hover:text-black  font-bold py-2 px-1 rounded-[10px]"
 
          >
          
@@ -171,7 +187,7 @@ export default function Activities() {
         </article>
         <article  className="flex max-w-xl h-[230px]  bg-[#003566] flex-col element-shadow rounded-[10px] items-start justify-between">
           <div className="element-center w-full "> <div className=" flex items-center gap-x-4 text-xs">
-     <h1 className="text-2xl font-bold tracking-tight  text-white p-2 text-center mx-auto  sm:text-2xl">Scientific and cultural activities</h1>
+     <h1 className="text-2xl font-bold tracking-tight  text-white py-2 px-5 text-center mx-auto  sm:text-2xl">Religious Activities</h1>
       
           </div ></div>
          
@@ -179,17 +195,17 @@ export default function Activities() {
             <h3 className="mt-1text-lg font-semibold leading-6 text-white group-hover:text-gray-600">
            
             </h3>
-            <p className="mt-5 line-clamp-3 px-10 md:px-4 text-sm leading-6 mx-auto text-gray-400">{data[2].desc}</p >
+            <p className="mt-3 line-clamp-3 px-10 md:px-4 text-sm leading-6 mx-auto text-gray-400">{data[0].desc}</p >
           </div>
           <div className=" mx-auto relative my-auto flex items-center gap-x-4">
           <div className="">
           <img src={imag1} alt="" className="h-10 w-10  rounded-full bg-gray-50" />
 </div>
-            <div className="text-sm  w-[50%]  leading-6">
-              <p className="font-semibold text-center text-white">
+<div className="text-sm  w-[50%]  leading-6">
+      
+              <p className="font-semibold mx-[10px] text-center text-white">
              
-                  <span className=" absoluteinset-0"></span >
-             Soufiane Elyaakoubi
+              All Club Members 
                
               </p>
             
@@ -197,8 +213,8 @@ export default function Activities() {
         </div>
       
          <Link
-         to="/activities/cultural"
-                   className=" bg-[#ffc300] w-[110px] right-1 text-[15px]  text-black text-center hover:bg-white hover:border hover:border-black hover:text-black  font-bold py-2 px-3 rounded-[10px]"
+         to="/activities/religion"
+         className=" bg-[#ffc300] w-[100px] right-1 text-[15px]  text-black text-center hover:bg-white hover:border hover:border-black hover:text-black  font-bold py-2 px-1 rounded-[10px]"
 
          >
          

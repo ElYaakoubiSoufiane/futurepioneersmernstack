@@ -11,8 +11,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
-import {EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
+
 import { Link } from "react-router-dom";
 
 

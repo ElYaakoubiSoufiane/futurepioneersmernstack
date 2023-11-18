@@ -9,6 +9,11 @@ import pic7 from "../../assets/FB_IMG_1699002118201.jpg";
 import pic8 from "../../assets/FB_IMG_1699002123662.jpg";
 import pic9 from "../../assets/FB_IMG_1699002128649.jpg";
 import pic10 from "../../assets/FB_IMG_1699002138474.jpg";
+import pic11 from "../../assets/Cultural/IMG_2760.jpg";
+import pic12 from "../../assets/Cultural/IMG_2765.jpg";
+import pic13 from "../../assets/Cultural/IMG_2766.jpg";
+import pic14 from "../../assets/Cultural/IMG_2767.jpg";
+import pic15 from "../../assets/Cultural/IMG_2768.jpg";
 
 
 import 'swiper/css';
@@ -23,7 +28,14 @@ import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import {EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 
 import './StylePic.css'
-const  images = [pic10, pic9, pic8, pic7, pic6, pic5, pic4, pic3, pic2, pic1];
+const  images = [pic10, pic9,pic14, pic8,pic12, pic7,pic15, pic6,pic11, pic5, pic4,
+  pic13, pic3,
+pic2, 
+
+
+
+
+];
 
 
 export default function CulturalActivitiesPict() {
@@ -39,7 +51,7 @@ export default function CulturalActivitiesPict() {
       
      
         
-    <div className=" py-[100px] h-[800px] ">
+    <div className=" continer_Swiper py-[100px] h-[800px] ">
           <Swiper
             effect={'coverflow'}
             grabCursor={true}
@@ -74,7 +86,7 @@ export default function CulturalActivitiesPict() {
       
            
     <div>
-    <div className="slider-controler   ">
+    <div className="slider-controler    ">
               <div className=" swiper-button-prev slider-arrow">
                 <ion-icon name="arrow-back-outline"></ion-icon>
               </div>

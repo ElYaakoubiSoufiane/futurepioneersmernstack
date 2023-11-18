@@ -65,7 +65,11 @@ body{
    
    
   /* loginCss*/
-   
+  .container {
+    width: 100%;
+    max-width: 1200px; /* You can adjust the max-width based on your design */
+    margin: 0 auto; /* Center the container */
+  }
    .login_container {
     @apply w-full min-h-screen bg-white flex items-center justify-center;
     }
