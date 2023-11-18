@@ -10,9 +10,12 @@ import img8 from "../../assets/FB_IMG_1699002123662.jpg";
 import img9 from "../../assets/FB_IMG_1699002128649.jpg";
 import img10 from "../../assets/FB_IMG_1699002138474.jpg";
 import "../../App.css";
+import imag1 from "../../assets/413-4139803_unknown-profile-profile-picture-unknown.png";
+
 import { InView } from "react-intersection-observer";
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
+import { Link } from "react-router-dom";
 
 
 const container = {
@@ -38,26 +41,28 @@ const item = {
   },
 };
 
-export default function Courses() {
-  const controls = useAnimation();
-  const handleInView = (inView: any, entry: any) => {
-    if (inView) {
-      controls.start("visible");
-    } else {
-      controls.start("hidden");
-    }
-  };
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-  const images = [img10, img9, img8, img7, img6, img5, img4, img3, img2, img1];
+export default function ActivitiesDetailles() {
+    const images = [img10, img9, img8, img7, img6, img5, img4, img3, img2, img1];
+    const controls = useAnimation();
+    const handleInView = (inView: any, entry: any) => {
+      if (inView) {
+        controls.start("visible");
+      } else {
+        controls.start("hidden");
+      }
+    };
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+  
   return (
+
     <InView as="div" onChange={handleInView}>
       <motion.div
         variants={container}
         initial="hidden"
         animate="visible"
-        className=" py-[100px] container grid    max-w-full  grid grid-cols-1      md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4  gap-[40px] relative "
+         className=" py-[100px] container grid    max-w-full  grid grid-cols-1      md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4  gap-[40px] relative "
       >
         {images.map((img) => (
           <motion.section
@@ -69,18 +74,18 @@ export default function Courses() {
           >
             <motion.div
               variants={item}
-              className="  Course-Syl grid  w-[260px] lg:w-[290px] text-center  element-shadow"
+               className="  Course-Syl grid  w-[260px] lg:w-[290px] text-center  element-shadow"
               key={img}
             >
               <img
                 src={img}
                 alt="formation   imge"
-                className="rounded-[10px]  h-[260px] lg:h-[290px] "
+                 className="rounded-[10px]  h-[260px] lg:h-[290px] "
               />
             </motion.div>
           </motion.section>
         ))}
       </motion.div>
     </InView>
-  );
+  )
 }

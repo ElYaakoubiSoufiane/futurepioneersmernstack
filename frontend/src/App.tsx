@@ -3,10 +3,8 @@ import "./App.css";
 import Header from "./components/HomePage/Header";
 import { Navigate, Route,useLocation , Routes } from "react-router-dom";
 import Home from "./components/HomePage/Home";
-import Course from "./components/HeaderLinks/Courses";
+
 import Footer from "./components/HomePage/Footer";
-import Signup from "./components/register_login/Singup/SignUp";
-import Login from "./components/register_login/Login/Login";
 
 import { useDispatch, useSelector } from "react-redux";
 import About from "./components/About";
@@ -14,63 +12,49 @@ import Campaign from "./components/HeaderLinks/Campaign";
 import ClubDesign from "./components/HomePage/ClubDesign";
 
 import { handleLogin, handleLogout } from "./components/Context/Reducer";
+import Activities from "./components/HeaderLinks/Activities";
+// import ActivitiesDetailles from "./components/HeaderLinks/ReligionActivity";
+import ReligionActivities from "./components/HeaderLinks/ReligionActivity";
+import ReligionActivitiesPict from "./components/HeaderLinks/ReligionActivityPic";
+import SocialActivity from "./components/HeaderLinks/SocialActivity ";
+import CulturalActivities from "./components/HeaderLinks/CulturalActivity";
+import SocialActivitiesPict from "./components/HeaderLinks/SocialActivityPic";
+import CulturalActivitiesPict from "./components/HeaderLinks/CulturelActivityPic";
+import Teams from "./components/HomePage/Teams";
 
 function App() {
-  const dispatch = useDispatch();
-  const isLogged = useSelector((state: any) => state.auth.isLogged);
-  const location = useLocation();
-  // if (data !== "") {
-  //   dispatch(handleLogin());
-  // } else {
-  //   dispatch(handleLogout());
-  // }
-  console.log(isLogged);
+ 
 
   useEffect(() => {
-    const data = window.localStorage.getItem("token");
-    if (data === ""||data===null) {
-      dispatch(handleLogout());
-    } else {
-      dispatch(handleLogin());
-    }
+ 
     window.scrollTo(0, 0);
     
   }, []);
-//   useEffect(() => {
-//     if (!isLogged && location.pathname !== "/login" && location.pathname !== "/signup") {
-//       location.pathname = "/login";
-//     }
-//  }, [isLogged, location]);
-  // console.log(isLogged);
+
   return (
 
-      // {" "}
-      // {/* {isLogged ? ( */}
+  
         <>
           <Header />
           <Routes>
-            <Route path="/Courses" element={<Course />} />
+            <Route path="/activities" element={<Activities />} />
+            <Route path="/activities/religion" element={<ReligionActivities />} />
+            <Route path="/activities/social" element={<SocialActivity />} />
+            <Route path="/activities/cultural" element={<CulturalActivities />} />
+            <Route path="/activities/religion/pictures" element={<ReligionActivitiesPict />} />
+            <Route path="/activities/social/pictures" element={<SocialActivitiesPict />} />
+            <Route path="/activities/cultural/pictures" element={<CulturalActivitiesPict />} />
+            
+            <Route path="/teams" element={<Teams />} />
             <Route path="/campaign" element={<Campaign />} />
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             {/* <Route path="/logout" element={<LogOut />} /> */}
-            <Route path="/login" element={<Navigate replace to="/" />} />
+            {/* <Route path="/login" element={<Navigate replace to="/" />} /> */}
           </Routes>
           <Footer />
             </>
-        // {/* </>
-      // ) : (
-      //   <>
-      //     <Header />
-
-      //     <Routes>
-      //       <Route path="/login" element={<Login />} />
-      //       <Route path="/" element={<Login />} />
-      //       <Route path="/signup" element={<Signup />} />
-      //     </Routes>
-      //     <ClubDesign />
-      //   </>
-      // )} */}
+    
   
   );
 }

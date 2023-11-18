@@ -40,18 +40,17 @@ export default function Header() {
     const handleScroll = () => {
     
       if (headerRef.current) {
-        headerRef.current.style.background = "#fbc53a";
-          headerRef.current.style.color = "#000000";
-        if (window.scrollY < 100) {
-          headerRef.current.style.background = "#fbc53a";
-          headerRef.current.style.color = "#000000";
+   
+        if (window.scrollY > 100) {
+          headerRef.current.style.background = "#000000";
+          headerRef.current.style.color = "#ffffff";
           if (!isTrue) {
             setmenuCol("focus:bg-white focus:text-black");
           }
         
         } else {
-          headerRef.current.style.background = "#000000";
-          headerRef.current.style.color = "#fbc53a";
+          headerRef.current.style.background = "#ffffff";
+          headerRef.current.style.color = "#000000";
               
   if (isTrue) {
     setmenuCol("focus:bg-black focus:text-white");
@@ -101,10 +100,16 @@ export default function Header() {
                         <Icon path={mdiHomeVariant} size={1} />
                       </Link>
                       <Link
-                        to="/courses"
+                        to="/teams"
                         className=" font-extrabold  hover:bg-[#000000] hover:text-white    rounded-md px-3 py-2 text-sm "
                       >
-                        Courses
+                       Teams
+                      </Link>
+                      <Link
+                        to="/activities"
+                        className=" font-extrabold  hover:bg-[#000000] hover:text-white    rounded-md px-3 py-2 text-sm "
+                      >
+                       Activities
                       </Link>
                       <Link
                         to="/campaign"
@@ -185,10 +190,19 @@ export default function Header() {
                       onClick={() => {
                         setMobileMenu(false);
                       }}
-                      to="/courses"
+                      to="/teams"
                       className=" text-black font-extrabold  text-center hover:bg-[#000000] hover:text-white    rounded-md px-3 py-2 text-sm "
                     >
-                      Courses
+                     Teams
+                    </Link>
+                    <Link
+                      onClick={() => {
+                        setMobileMenu(false);
+                      }}
+                      to="/activities"
+                      className=" text-black font-extrabold  text-center hover:bg-[#000000] hover:text-white    rounded-md px-3 py-2 text-sm "
+                    >
+                    Activities
                     </Link>
                     <Link
                       onClick={() => {
