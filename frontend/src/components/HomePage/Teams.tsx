@@ -31,7 +31,7 @@ const data=[
     img5,
     img6,
     img7,
-
+img8
     
     
     ]
