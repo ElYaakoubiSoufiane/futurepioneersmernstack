@@ -19,19 +19,7 @@ export default function Header() {
   
   
 
-  const isLogged = useSelector((state:any) => state.auth.isLogged);
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    const data =window.localStorage.getItem("token");
-    if(data===""||data===null){
-      dispatch(handleLogout());
-    }else{
-    
-    dispatch(handleLogin());
-    }
-    
-    
-  }, []);
+ 
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -39,6 +27,7 @@ export default function Header() {
       setWindowWidth(getWindowWidth());
     };
   
+
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -50,7 +39,15 @@ export default function Header() {
 
   const headerRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
+  
+  
+    const data =window.localStorage.getItem("token");
+    if(data===""||data===null){
+      dispatch(handleLogout());
+    }else{
     
+    dispatch(handleLogin());
+    }
     const handleScroll = () => {
     
       if (headerRef.current) {
@@ -80,7 +77,8 @@ export default function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
- 
+  const isLogged = useSelector((state:any) => state.auth.isLogged);
+
   console.log(isLogged);
   return (
     <>
