@@ -125,7 +125,7 @@ export default function TeamSection() {
                   <h1 className="text-white text-sm font-bold tracking-[0.8px] m-[10px]">
                     {testData[1].desc}
                   </h1>
-                  <h3 className="text-white"> {testData[0].FILEIERE}</h3>
+                  <h3 className="text-white"> {testData[1].FILEIERE}</h3>
                 </div>
               </motion.div>
 
