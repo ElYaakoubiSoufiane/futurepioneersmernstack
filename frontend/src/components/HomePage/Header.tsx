@@ -91,7 +91,7 @@ export default function Header() {
        ref={headerRef}
        className="z-10 fixed h-[49px] py-[2px] box-shadow m-auto w-full"
      >
-       <nav className="container  fixed    max-w-full transition-colors duration-500">
+       <nav className="container  fixed  w-[100%]  max-w-full transition-colors duration-500">
             <div className=" max-w-auto px-2  z-10 h- sm:px-6 lg:px-8">
               <div className="relative flex w-[100%] items-center justify-between">
                 <div className="flex  pt-2 flex-1 items-center justify-center  sm:items-stretch sm:justify-start">
@@ -260,23 +260,23 @@ export default function Header() {
             <div
             /// <reference path="ref" />
             
-            className="z-10 fixed h-[49px] py-[2px] box-shadow m-auto w-full"
+            className="z-10 fixed h-[49px]  py-[2px] box-shadow m-auto w-full"
           >
           <nav className="container  fixed   max-w-full transition-colors duration-500">
-          <div className=" max-w-auto px-2  z-10 h- sm:px-6 lg:px-8">
+          <div className=" max-w-auto px-2  z-10 h- sm:pl-6 lg:pl-8">
             <div className="relative flex w-[100%] items-center justify-between">
-              <div className="flex text-center  pt-2 flex-1  items-center justify-center  sm:items-stretch sm:justify-start">
-                     <div className=" max-h-full my-auto sm:ml-6 sm:block">
+              <div className="flex text-center my-auto  pt-2 flex-1  items-center justify-center  sm:items-stretch sm:justify-start">
+                     <div className=" max-h-full  sm:ml-6 sm:block">
                   <div className="flex space-x-4">               
                     <Link
                       to="/login"
-                      className=" font-extrabold bg-black   hover:bg-[#ffffff] hover:text-black   text-white  rounded-md px-3 py-2 text-sm "
+                      className=" font-extrabold bg-black      text-white  rounded-md px-3 py-2 text-sm "
                     >
                      LogIn
                     </Link>
                     <Link
                       to="/signup"
-                      className=" font-extrabold  hover:bg-[#000000] hover:text-white  text-black   rounded-md px-3 py-2 text-sm "
+                      className=" font-extrabold    text-black   rounded-md px-3 py-2 text-sm "
                     >
                    SignUp
                     </Link>
@@ -284,7 +284,7 @@ export default function Header() {
                   <div className="flex space-x-4"></div>
                 </div>
               </div>
-              <div className=" flex  right-0">
+              <div className=" flex ">
                 <Link to="https://www.instagram.com/futurepioneers_ensaf/">
                   <FaInstagram className="mx-[4px] h-[20px] " />
                 </Link>
