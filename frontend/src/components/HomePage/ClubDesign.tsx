@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import imag1 from "../../assets/fp logo.png";
 import { motion } from "framer-motion";
 const textAnimate = {
@@ -18,6 +19,9 @@ const imageAnimate = {
   },
 };
 export default function ClubDesign() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="z-0 ">
       {" "}
