@@ -114,7 +114,7 @@ export default function Activities() {
                   Malak El Aissi
                
               </p>
-              <p className="font-semibold mx-[10px] text-center text-white">                             
+              <p className="font-semibold mx-[10px] text-center text-white">                              Malak El Aissi
              
                   <span className=" absoluteinset-0"></span >
                   Ibtissam Rfig

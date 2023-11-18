@@ -36,7 +36,7 @@ export default function TeamSection() {
   const [testData, setTestData] = useState([
     {
       id: 0,
-      desc: "PRESEDENT  ",
+      desc: "PRESIDENT  ",
       FILEIERE: "Embedded Systems and Industrial Intelligence",
 
       name: "Mohamed Touiouel",
@@ -44,19 +44,19 @@ export default function TeamSection() {
     {
       id: 1,
       desc: "General clerk",
-      FILEIERE: "Mechanical Engineering and Automated Systems",
-
+      FILEIERE: "Mechanical Engineering And Automated Systems",
+    
       name: "Jaouad Abdelaoui",
     },
     {
       id: 2,
-      desc: "Member",
+      desc: "MEMBER",
       FILEIERE: "Embedded Systems and Industrial Intelligence",
       name: "Mohamed Amkrane",
     },
     {
       id: 3,
-      desc: "Member",
+      desc: "MEMBER",
       FILEIERE: "Embedded Systems and Industrial Intelligence",
       name: "El Yaakoubi Soufiane",
     },

@@ -125,7 +125,7 @@ export default function About() {
               variants={item}
               className="font-bold text-3xl md:text-4xl py-[10px]"
             >
-              About the LAMSA DIFAE campaign{" "}
+              About the LAMSAT DIFAE campaign{" "}
             </motion.h1>
             <motion.h2 variants={item} className="pb-[15px]">
               The Touch of Warmth campaign is one of the solidarity and social
