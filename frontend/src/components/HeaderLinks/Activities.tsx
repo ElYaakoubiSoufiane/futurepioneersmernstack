@@ -111,13 +111,14 @@ export default function Activities() {
               <p className="font-semibold mx-[10px] text-center text-white">
              
                   <span className=" absoluteinset-0"></span >
-             MalaK EL Aissi
+                  Malak El Aissi
                
               </p>
-              <p className="font-semibold mx-[10px] text-center text-white">
+              <p className="font-semibold mx-[10px] text-center text-white">                              Malak El Aissi
              
                   <span className=" absoluteinset-0"></span >
-             Ibtissam Rfig
+                  Ibtissam Rfig
+
                
               </p>
             
@@ -160,13 +161,13 @@ export default function Activities() {
               <p className="font-semibold mx-[10px] text-center text-white">
              
                   <span className=" absoluteinset-0"></span >
-            Omar Mojahid
+                  Omar El moujahid
                
               </p>
               <p className="font-semibold mx-[10px] text-center text-white">
              
                   <span className=" absoluteinset-0"></span >
-             Manal El Coch
+                  Manal El Kouche
                
               </p>
             

@@ -16,7 +16,7 @@ function Footer() {
           <div className="element-center mb-1 md:mb-0">
             <a href="/" className="flex items-center">
               <img src={img} className="h-8 me-3" alt="FlowBite Logo" />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
                 FUTURE PIONEERS
               </span>
             </a>
