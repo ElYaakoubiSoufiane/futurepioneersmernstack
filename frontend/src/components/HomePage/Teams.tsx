@@ -9,7 +9,7 @@ import img5 from "../../assets/Teams/FB_IMG_1699062089427.jpg"
 import img6 from "../../assets/Teams/FB_IMG_1699062091709.jpg"
 import img7 from "../../assets/Teams/FB_IMG_1699062097550.jpg"
 import img8 from "../../assets/Teams/Team.jpg"
-import img9 from "../../assets/Teams/Team1.jpg"
+
 import 'swiper/css';
     
     
@@ -31,8 +31,7 @@ const data=[
     img5,
     img6,
     img7,
-    img8,
-    img9,
+
     
     
     ]
