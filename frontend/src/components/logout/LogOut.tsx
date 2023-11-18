@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { handleLogout } from "../Context/Reducer";
 
-export default async function LogOut() {
+export default  function LogOut() {
   const Navigate = useNavigate();
   const dispatch = useDispatch();
   useEffect(() => {

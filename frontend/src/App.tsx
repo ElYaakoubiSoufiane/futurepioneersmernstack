@@ -21,21 +21,38 @@ import CulturalActivities from "./components/HeaderLinks/CulturalActivity";
 import SocialActivitiesPict from "./components/HeaderLinks/SocialActivityPic";
 import CulturalActivitiesPict from "./components/HeaderLinks/CulturelActivityPic";
 import Teams from "./components/HomePage/Teams";
+import LogOut from "./components/logout/LogOut";
+import Login from "./components/register_login/Login/Login";
+import Signup from "./components/register_login/Singup/SignUp";
 
 function App() {
- 
 
+  const dispatch=useDispatch();
+  const data =window.localStorage.getItem("token");
+
+const isLogged=useSelector((state:any)=>state.auth.isLogged)
   useEffect(() => {
- 
     window.scrollTo(0, 0);
+    
+    if(data===""||data===null){
+      dispatch(handleLogout());
+    }else{
+    
+    dispatch(handleLogin());
+    }
+    
     
   }, []);
 
   return (
 
+  <>
   
+  <Header />
+        {isLogged ? (  
+        
         <>
-          <Header />
+        
           <Routes>
             <Route path="/activities" element={<Activities />} />
             <Route path="/activities/religion" element={<ReligionActivities />} />
@@ -49,13 +66,28 @@ function App() {
             <Route path="/campaign" element={<Campaign />} />
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            {/* <Route path="/logout" element={<LogOut />} /> */}
+            <Route path="/logout" element={<LogOut />} />
             {/* <Route path="/login" element={<Navigate replace to="/" />} /> */}
           </Routes>
           <Footer />
+          </>
+          ):(<>
+            <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            </Routes>
+            <ClubDesign/>
             </>
+          )}
+        
+          
+          
+       
     
-  
+            
+  </>
+    
   );
 }
 

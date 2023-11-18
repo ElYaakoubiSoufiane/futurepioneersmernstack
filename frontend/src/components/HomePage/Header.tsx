@@ -5,26 +5,40 @@ import { mdiViewHeadline } from "@mdi/js";
 import imag1 from "../../assets/fp logo.png";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { handleLogout } from "../Context/Reducer";
+import { handleLogin, handleLogout } from "../Context/Reducer";
 import { useDispatch, useSelector } from "react-redux";
 
 const getWindowWidth = () => {
   const { innerWidth: width } = window;
   return width;
 };
-
 export default function Header() {
   const isTrue = false;
   // const navigate = useNavigate();
   const [windowWidth, setWindowWidth] = useState(getWindowWidth());
+  
+  
 
+  const isLogged = useSelector((state:any) => state.auth.isLogged);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const data =window.localStorage.getItem("token");
+    if(data===""||data===null){
+      dispatch(handleLogout());
+    }else{
+    
+    dispatch(handleLogin());
+    }
+    
+    
+  }, []);
 
   const dispatch = useDispatch();
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(getWindowWidth());
     };
-    console.log(window.localStorage.getItem("token"));
+  
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -66,16 +80,20 @@ export default function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const isLogged = useSelector((state: any) => state.auth.isLogged);
+ 
+  console.log(isLogged);
   return (
     <>
-      <div
-        /// <reference path="ref" />
-        ref={headerRef}
-        className="z-10 fixed h-[49px] py-[2px] box-shadow m-auto w-full"
-      >
-        
-          <nav className="container  fixed    max-w-full transition-colors duration-500">
+      
+       {  isLogged ?  (
+       
+       
+       <div
+       /// <reference path="ref" />
+       ref={headerRef}
+       className="z-10 fixed h-[49px] py-[2px] box-shadow m-auto w-full"
+     >
+       <nav className="container  fixed    max-w-full transition-colors duration-500">
             <div className=" max-w-auto px-2  z-10 h- sm:px-6 lg:px-8">
               <div className="relative flex w-[100%] items-center justify-between">
                 <div className="flex  pt-2 flex-1 items-center justify-center  sm:items-stretch sm:justify-start">
@@ -124,7 +142,7 @@ export default function Header() {
                         About
                       </Link>
 
-                      {/* <Link
+                      <Link
                         className="bg-gray  rounded-md  hover:bg-[#000000] hover:text-white   px-3 py-2 text-sm font-extrabold "
                         aria-current="page"
                         onClick={() => {
@@ -134,7 +152,7 @@ export default function Header() {
                         to="/login"
                       >
                         LogOut
-                      </Link> */}
+                      </Link> 
                     </div>
 
                     <div className="flex space-x-4"></div>
@@ -222,8 +240,8 @@ export default function Header() {
                     >
                       About
                     </Link>
-                    {/* <Link
-                      to="/LOGIN"
+                    <Link
+                      to="/login"
                       className="bg-gray text-black rounded-md  text-center hover:bg-[#000000] hover:text-white   px-3 py-2 text-sm font-extrabold "
                       aria-current="page"
                       onClick={() => {
@@ -232,14 +250,60 @@ export default function Header() {
                       }}
                     >
                       LogOut
-                    </Link> */}
+                    </Link> 
                   </>
                 )}
               </div>
             </div>
-          </nav>
-        
-      </div>
+          </nav> 
+          </div>
+          
+          ):(
+            <div
+            /// <reference path="ref" />
+            
+            className="z-10 fixed h-[49px] py-[2px] box-shadow m-auto w-full"
+          >
+          <nav className="container  fixed   max-w-full transition-colors duration-500">
+          <div className=" max-w-auto px-2  z-10 h- sm:px-6 lg:px-8">
+            <div className="relative flex w-[100%] items-center justify-between">
+              <div className="flex text-center  pt-2 flex-1  items-center justify-center  sm:items-stretch sm:justify-start">
+                     <div className=" max-h-full my-auto sm:ml-6 sm:block">
+                  <div className="flex space-x-4">               
+                    <Link
+                      to="/login"
+                      className=" font-extrabold bg-black   hover:bg-[#ffffff] hover:text-black   text-white  rounded-md px-3 py-2 text-sm "
+                    >
+                     LogIn
+                    </Link>
+                    <Link
+                      to="/signup"
+                      className=" font-extrabold  hover:bg-[#000000] hover:text-white  text-black   rounded-md px-3 py-2 text-sm "
+                    >
+                   SignUp
+                    </Link>
+                  </div>
+                  <div className="flex space-x-4"></div>
+                </div>
+              </div>
+              <div className=" flex  right-0">
+                <Link to="https://www.instagram.com/futurepioneers_ensaf/">
+                  <FaInstagram className="mx-[4px] h-[20px] " />
+                </Link>
+                <Link to="https://ma.linkedin.com/company/future-pioneers-ensaf">
+                  {" "}
+                  <FaLinkedinIn className="  mx-[6px] h-[20px] " />
+                </Link>
+                <Link to="https://web.facebook.com/FuturePioneersEnsaf/?_rdc=1&_rdr">
+                  <FaFacebookF className="mx-[4px] " />
+                </Link>
+              </div>
+            </div>
+          </div>        
+        </nav> 
+        </div>
+          ) }                 
+     
       <br />
     </>
   );

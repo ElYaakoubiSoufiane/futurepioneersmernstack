@@ -71,7 +71,7 @@ const Login = () => {
       transition={{ staggerChildren: 0.5 }}
       className="bg-white  py-[80px]  element-center"
     >
-      <div className="   h-[350px] sm:h-[400px] w-[90%] md:w-[90%]  lg:w-[60%]  flex element-shadow  rounded-[10px]">
+      <div className="   h-[370px] sm:h-[400px] w-[90%] md:w-[90%]  lg:w-[60%]  flex element-shadow  rounded-[10px]">
         <div className=" flex-[2] flex flex-col items-center justify-center bg-[white] rounded-tl-[10px] rounded-bl-[10px]">
           <form className="flex flex-col items-center" onSubmit={HandleSubmit}>
             <h1 className="text-[17px] my-auto sm:text-[20px] p-7 font-black md:text-[35px] xl:text-[40px] mt-0">
