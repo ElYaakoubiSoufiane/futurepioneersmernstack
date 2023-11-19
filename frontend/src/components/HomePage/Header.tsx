@@ -53,8 +53,8 @@ export default function Header() {
       if (headerRef.current) {
    
         if (window.scrollY > 100) {
-          headerRef.current.style.background = "#000000";
-          headerRef.current.style.color = "#ffffff";
+          headerRef.current.style.background = "#ececec";
+          headerRef.current.style.color = "#000000";
           if (!isTrue) {
             setmenuCol("focus:bg-white focus:text-black");
           }
