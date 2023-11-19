@@ -32,7 +32,7 @@ const Signup = () => {
   const [error, setError] = useState("");
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
-
+const[showError,setShowError]=useState(false);
   const [level, setLevel] = useState("CP-1");
   const [password, setPassword] = useState("");
 
@@ -97,7 +97,9 @@ const Signup = () => {
               type="email"
               placeholder="Email"
               name="email"
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={(e) => {setEmail(e.target.value);
+              setShowError(false)
+              }}
               value={email}
               required
               className="[outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid   w-[200px] md:w-[330px] bg-[#eee] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]"
@@ -110,7 +112,9 @@ const Signup = () => {
               className="[outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid   w-[200px] md:w-[330px] bg-[#eee] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]"
               placeholder="CP / CI"
               value={level}
-              onChange={(e) => setLevel(e.target.value)}
+              onChange={(e) => {setLevel(e.target.value);
+                setShowError(false)
+              }}
             >
               <option value="CP-1">CP-1</option>
               <option value="CP-2">CP-2</option>
@@ -123,19 +127,28 @@ const Signup = () => {
               type="password"
               placeholder="Password"
               name="password"
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={(e) => {setPassword(e.target.value);
+              
+                setShowError(false)
+
+              }}
               value={password}
               required
               className="[outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid   w-[200px] md:w-[330px] bg-[#eee] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]"
             />
 
-            {error && (
+            {error && showError &&(
               <div className=" element-center w-[150px] md:w-[370px] text-[10px] md:text-sm bg-[#ff5a5a] text-[white] text-center mx-0 my-[5px] md:p-[15px] rounded-[5px]">
                 {error}
               </div>
             )}
             <button
               type="submit"
+              onClick={()=>{
+                setShowError(true);
+
+              
+              }}
               className="[outline:none]  text-[16px] font-bold md:text-[20px]  text-white bg-[black]   w-[100px] md:w-[180px] font-[bold] text-sm cursor-pointer px-0 py-2 element-center  md:h-[45px] rounded-[15px] "
             >
               Sing Up
