@@ -3,7 +3,7 @@ import img1 from "./../assets/fp logo.png";
 import { motion } from "framer-motion";
 
 const container = {
-  hidden: { x: -70, opacity: 1, scale: 0 },
+  hidden: { x: -20, opacity: 0, scale: 0 },
   visible: {
     opacity: 1,
     x: 0,
@@ -12,6 +12,7 @@ const container = {
     transition: {
       delayChildren: 0.3,
       staggerChildren: 0.2,
+      duration: 0.5
     },
   },
 };
