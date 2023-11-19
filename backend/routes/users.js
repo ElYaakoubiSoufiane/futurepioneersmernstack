@@ -23,10 +23,9 @@ router.post(
 );
 // 
 
-// db.users.createIndex( { userName: 1 }, { unique: true, sparse: true } )
 const validate = (data) => {
   const schema = Joi.object({
-    username: Joi.string().min(3).required().label("User Name"),
+  
     level: Joi.string().required().label("level"),
     email: Joi.string().email().required().label("Email"),
     password: Joi.string().required().min(6).label("Password"),

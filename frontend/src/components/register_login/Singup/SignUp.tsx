@@ -32,12 +32,12 @@ const Signup = () => {
   const [error, setError] = useState("");
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
-  const [username, setUsename] = useState("");
+
   const [level, setLevel] = useState("CP-1");
   const [password, setPassword] = useState("");
 
   const data = {
-    username,
+
     email,
     level,
     password,
@@ -91,15 +91,7 @@ const Signup = () => {
               Create Account
             </h1>
 
-            <input
-              type="text"
-              placeholder="User Name"
-              name="username"
-              onChange={(e) => setUsename(e.target.value)}
-              value={username}
-              required
-              className="[outline:none] text-center border mb-2.5 p-2 rounded-[5px] border-solid   w-[200px] md:w-[330px] bg-[#eee] text-sm mx-0 my-[5px] border-[none] focus:border-black focus:border-[2px]"
-            />
+         
 
             <input
               type="email"
